@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.github.zjh.dao.StudentsDao">
+    <!-- 返回类型 -->
+    <resultMap id="students" type="com.github.zjh.domain.Students">
+    	<result property="id" column="id"/>
+    	<result property="name" column="name"/>  
+    	<result property="password" column="password"/>  
+    	<result property="degree" column="degree"/>  
+    	<result property="email" column="email"/>  
+    	<result property="grade" column="grade"/>  
+    	<result property="major" column="major"/>     
+    </resultMap>
+    
+   <!-- 查询 数据-->
+   <select id="queryAll" resultMap="students" databaseId="mysql">
+       select * from students
+   </select>
+   
+   <select id="count" resultType="java.lang.Integer" databaseId="mysql">
+       select count(*) from students
+   </select>
+   
+   <select id="checkLogin" resultMap="students" databaseId="mysql">
+       select * from students where id=#{id} 
+   </select>
+   
+   <select id="queryById" resultMap="students" databaseId="mysql">
+       select * from students where id=#{id}
+   </select>
+   
+   <!--删除数据  -->
+   <delete id="delete" parameterType="String" databaseId="mysql">
+       delete from students where id=#{id}
+   </delete>
+   <!-- 得到学生的成绩 -->
+    <select id="findStudentBySCNo" >
+
+      select * from  students as s inner join 
+       			transcript as t
+      on t.sectionNo=#{sectionNo} and t.courseNo=#{courseNo} and s.id=t.studentId
+
+
+     </select>
+</mapper>

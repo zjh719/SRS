@@ -1,0 +1,999 @@
+10:06:02,590 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+10:06:02,673 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+10:06:02,705 DEBUG findProfessorById:145 : <==      Total: 1
+10:06:02,709 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+10:06:02,710 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+10:06:02,713 DEBUG findProfessorById:145 : <==      Total: 1
+10:06:02,716 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+10:06:02,718 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+10:06:02,722 DEBUG findProfessorById:145 : <==      Total: 1
+10:06:07,269 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+10:06:07,274 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+10:06:07,277 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+10:06:07,279 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+10:06:07,280 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+10:06:07,284 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+10:06:07,286 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+10:06:07,290 DEBUG getTotal:145 : ==> Parameters: 
+10:06:07,295 DEBUG getTotal:145 : <==      Total: 1
+10:06:08,272 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+10:06:08,275 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+10:06:08,287 DEBUG getSectionByCourseNo:145 : <==      Total: 1
+10:06:14,538 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+10:06:14,539 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+10:06:14,541 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+10:06:14,542 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 10 
+10:06:14,544 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+10:06:14,547 DEBUG fuzzyFindCourse:145 : <==      Total: 8
+10:06:14,549 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+10:06:14,550 DEBUG getTotal:145 : ==> Parameters: 
+10:06:14,551 DEBUG getTotal:145 : <==      Total: 1
+10:06:33,384 DEBUG addCourse:145 : ==>  Preparing: insert into course(courseNo,courseName,credits) values (?,?,?) 
+10:06:33,386 DEBUG addCourse:145 : ==> Parameters: JHG666(String), 思想品德(String), 2.0(Double)
+10:06:33,565 DEBUG addCourse:145 : <==    Updates: 1
+10:06:33,599 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+10:06:33,603 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+10:06:33,606 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+10:06:33,609 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 10 
+10:06:33,610 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+10:06:33,617 DEBUG fuzzyFindCourse:145 : <==      Total: 9
+10:06:33,619 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+10:06:33,619 DEBUG getTotal:145 : ==> Parameters: 
+10:06:33,621 DEBUG getTotal:145 : <==      Total: 1
+10:06:36,307 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+10:06:36,308 DEBUG getSectionByCourseNo:145 : ==> Parameters: JHG666(String)
+10:06:36,311 DEBUG getSectionByCourseNo:145 : <==      Total: 0
+10:06:38,413 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+10:06:38,415 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+10:06:38,421 DEBUG getSectionByCourseNo:145 : <==      Total: 1
+10:07:01,275 DEBUG addSection:145 : ==>  Preparing: insert into section(sectionNo,dayOfWeek,timeOfDay,room,seatingCapacity,courseNo) values(?,?,?,?,?,?) 
+10:07:01,277 DEBUG addSection:145 : ==> Parameters: 15(Integer), 一(String), 3月5日-6月27日(String), 教三A102(String), 20(Integer), CMP283(String)
+10:07:01,334 DEBUG addSection:145 : <==    Updates: 1
+10:07:01,355 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+10:07:01,358 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+10:07:01,362 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+10:07:01,364 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 10 
+10:07:01,365 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+10:07:01,368 DEBUG fuzzyFindCourse:145 : <==      Total: 9
+10:07:01,370 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+10:07:01,371 DEBUG getTotal:145 : ==> Parameters: 
+10:07:01,372 DEBUG getTotal:145 : <==      Total: 1
+10:07:02,965 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+10:07:02,967 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+10:07:02,973 DEBUG getSectionByCourseNo:145 : <==      Total: 2
+10:08:10,512 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+10:08:10,515 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+10:08:10,519 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+10:08:10,521 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+10:08:10,523 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+10:08:10,526 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+10:08:10,528 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+10:08:10,530 DEBUG getTotal:145 : ==> Parameters: 
+10:08:10,534 DEBUG getTotal:145 : <==      Total: 1
+10:08:11,671 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+10:08:11,674 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+10:08:11,676 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+10:08:11,678 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+10:08:11,682 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+10:08:11,684 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+10:08:11,687 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+10:08:11,688 DEBUG getTotal:145 : ==> Parameters: 
+10:08:11,690 DEBUG getTotal:145 : <==      Total: 1
+10:08:14,701 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+10:08:14,702 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+10:08:14,706 DEBUG getSectionByCourseNo:145 : <==      Total: 2
+10:08:27,890 DEBUG addSection:145 : ==>  Preparing: insert into section(sectionNo,dayOfWeek,timeOfDay,room,seatingCapacity,courseNo) values(?,?,?,?,?,?) 
+10:08:27,892 DEBUG addSection:145 : ==> Parameters: 65(Integer), 一(String), 3月5日-6月2日(String), 教三A102(String), 50(Integer), CMP283(String)
+10:08:27,956 DEBUG addSection:145 : <==    Updates: 1
+10:08:27,966 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+10:08:27,969 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+10:08:27,978 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+10:08:39,046 DEBUG resetSection:145 : ==>  Preparing: update section set dayOfWeek=?,timeOfDay=?,seatingCapacity=?,room=? where sectionNo=? 
+10:08:39,048 DEBUG resetSection:145 : ==> Parameters: 一(String), 3月5日-6月2日(String), 50(Integer), 教三A102(String), 666(Integer)
+10:08:39,050 DEBUG resetSection:145 : <==    Updates: 0
+10:08:39,061 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+10:08:39,062 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+10:08:39,064 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+10:08:48,584 DEBUG resetSection:145 : ==>  Preparing: update section set dayOfWeek=?,timeOfDay=?,seatingCapacity=?,room=? where sectionNo=? 
+10:08:48,586 DEBUG resetSection:145 : ==> Parameters: 一(String), 3月5日-6月2日(String), 50(Integer), 教三A102(String), 666(Integer)
+10:08:48,589 DEBUG resetSection:145 : <==    Updates: 0
+10:08:48,601 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+10:08:48,602 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+10:08:48,606 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+10:09:01,545 DEBUG resetSection:145 : ==>  Preparing: update section set dayOfWeek=?,timeOfDay=?,seatingCapacity=?,room=? where sectionNo=? 
+10:09:01,547 DEBUG resetSection:145 : ==> Parameters: 一(String), 3月5日-6月2日(String), 100(Integer), 教三A105(String), 66(Integer)
+10:09:01,595 DEBUG resetSection:145 : <==    Updates: 1
+10:09:01,606 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+10:09:01,606 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+10:09:01,612 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+10:10:11,224 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+10:10:11,225 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+10:10:11,229 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+10:10:14,922 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+10:10:14,922 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+10:10:14,925 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+10:10:37,731 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+10:10:37,732 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+10:10:37,736 DEBUG queryById:145 : <==      Total: 1
+10:10:37,738 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+10:10:37,739 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+10:10:37,740 DEBUG queryById:145 : <==      Total: 1
+10:10:37,742 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+10:10:37,743 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+10:10:37,744 DEBUG queryById:145 : <==      Total: 1
+10:10:37,767 DEBUG findSectionByStudent:145 : ==>  Preparing: select * from section as s inner join (select * from transcript where studentId=?) as t on t.sectionNo =s.sectionNo left join course on s.courseNo=course.courseNo 
+10:10:37,768 DEBUG findSectionByStudent:145 : ==> Parameters: 09143602(String)
+10:10:37,774 DEBUG findSectionByStudent:145 : <==      Total: 2
+10:10:42,129 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+10:10:42,130 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+10:10:42,132 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+10:10:42,133 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+10:10:42,134 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+10:10:42,136 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+10:10:42,137 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+10:10:42,138 DEBUG getTotal:145 : ==> Parameters: 
+10:10:42,139 DEBUG getTotal:145 : <==      Total: 1
+10:10:43,602 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+10:10:43,602 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+10:10:43,605 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+10:11:48,407 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+10:11:48,408 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+10:11:48,411 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+10:13:07,708 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+10:13:07,710 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+10:13:07,714 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+10:13:09,251 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+10:13:09,252 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP999(String)
+10:13:09,253 DEBUG getSectionByCourseNo:145 : <==      Total: 0
+10:13:10,877 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+10:13:10,878 DEBUG getSectionByCourseNo:145 : ==> Parameters: ART101(String)
+10:13:10,879 DEBUG getSectionByCourseNo:145 : <==      Total: 0
+10:13:14,527 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+10:13:14,529 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+10:13:14,531 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+10:13:14,532 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 10 
+10:13:14,533 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+10:13:14,536 DEBUG fuzzyFindCourse:145 : <==      Total: 9
+10:13:14,537 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+10:13:14,538 DEBUG getTotal:145 : ==> Parameters: 
+10:13:14,539 DEBUG getTotal:145 : <==      Total: 1
+10:13:16,134 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+10:13:16,134 DEBUG getSectionByCourseNo:145 : ==> Parameters: SAD456(String)
+10:13:16,136 DEBUG getSectionByCourseNo:145 : <==      Total: 0
+10:13:17,791 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+10:13:17,792 DEBUG getSectionByCourseNo:145 : ==> Parameters: ASD123(String)
+10:13:17,795 DEBUG getSectionByCourseNo:145 : <==      Total: 2
+10:17:23,410 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+10:17:23,411 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+10:17:23,414 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+14:50:23,189 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+14:50:23,225 DEBUG queryById:145 : ==> Parameters: 09143600(String)
+14:50:23,251 DEBUG queryById:145 : <==      Total: 0
+14:50:32,964 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+14:50:32,966 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+14:50:32,971 DEBUG findProfessorById:145 : <==      Total: 1
+14:50:32,973 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+14:50:32,974 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+14:50:32,977 DEBUG findProfessorById:145 : <==      Total: 1
+14:50:32,979 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+14:50:32,980 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+14:50:32,983 DEBUG findProfessorById:145 : <==      Total: 1
+14:50:35,358 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+14:50:35,359 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+14:50:35,362 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+14:50:35,364 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+14:50:35,366 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+14:50:35,368 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+14:50:35,369 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+14:50:35,370 DEBUG getTotal:145 : ==> Parameters: 
+14:50:35,372 DEBUG getTotal:145 : <==      Total: 1
+14:50:36,820 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+14:50:36,822 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+14:50:36,830 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+14:50:38,246 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+14:50:38,248 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP999(String)
+14:50:38,250 DEBUG getSectionByCourseNo:145 : <==      Total: 0
+14:50:39,984 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+14:50:39,985 DEBUG getSectionByCourseNo:145 : ==> Parameters: ART101(String)
+14:50:39,987 DEBUG getSectionByCourseNo:145 : <==      Total: 0
+14:50:42,149 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+14:50:42,151 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+14:50:42,153 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+14:50:42,154 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 10 
+14:50:42,155 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+14:50:42,158 DEBUG fuzzyFindCourse:145 : <==      Total: 9
+14:50:42,159 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+14:50:42,160 DEBUG getTotal:145 : ==> Parameters: 
+14:50:42,162 DEBUG getTotal:145 : <==      Total: 1
+14:51:08,083 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+14:51:08,085 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+14:51:08,096 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+14:51:14,175 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+14:51:14,177 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP999(String)
+14:51:14,179 DEBUG getSectionByCourseNo:145 : <==      Total: 0
+14:51:14,849 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+14:51:14,851 DEBUG getSectionByCourseNo:145 : ==> Parameters: MNJ588(String)
+14:51:14,855 DEBUG getSectionByCourseNo:145 : <==      Total: 0
+14:51:16,536 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+14:51:16,538 DEBUG getSectionByCourseNo:145 : ==> Parameters: ART101(String)
+14:51:16,541 DEBUG getSectionByCourseNo:145 : <==      Total: 0
+14:51:20,590 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+14:51:20,592 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+14:51:20,596 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+14:51:22,272 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+14:51:22,273 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP999(String)
+14:51:22,275 DEBUG getSectionByCourseNo:145 : <==      Total: 0
+14:51:27,855 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+14:51:27,856 DEBUG getSectionByCourseNo:145 : ==> Parameters: ART101(String)
+14:51:27,858 DEBUG getSectionByCourseNo:145 : <==      Total: 0
+14:51:30,352 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+14:51:30,353 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+14:51:30,356 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+14:51:32,991 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+14:51:32,993 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP999(String)
+14:51:32,995 DEBUG getSectionByCourseNo:145 : <==      Total: 0
+14:51:38,679 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+14:51:38,680 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+14:51:38,683 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+14:51:42,901 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+14:51:42,903 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP999(String)
+14:51:42,907 DEBUG getSectionByCourseNo:145 : <==      Total: 0
+14:51:56,105 DEBUG findSectionByProfessorId:145 : ==>  Preparing: select * from course as c inner join (select * from section where professorId=?) as s on c.courseNo=s.courseNo left join professor as p on s.professorId=p.id 
+14:51:56,107 DEBUG findSectionByProfessorId:145 : ==> Parameters: 09143600(String)
+14:51:56,113 DEBUG findSectionByProfessorId:145 : <==      Total: 4
+14:51:57,131 DEBUG findStudentBySectionNo:145 : ==>  Preparing: select * from transcript as t inner join (select * from section where sectionNo=?) as s on t.sectionNo =s.sectionNo left join students on t.studentId=students.id 
+14:51:57,132 DEBUG findStudentBySectionNo:145 : ==> Parameters: 33(String)
+14:51:57,134 DEBUG findStudentBySectionNo:145 : <==      Total: 0
+14:51:58,550 DEBUG findStudentBySectionNo:145 : ==>  Preparing: select * from transcript as t inner join (select * from section where sectionNo=?) as s on t.sectionNo =s.sectionNo left join students on t.studentId=students.id 
+14:51:58,551 DEBUG findStudentBySectionNo:145 : ==> Parameters: 3(String)
+14:51:58,553 DEBUG findStudentBySectionNo:145 : <==      Total: 1
+14:52:14,953 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+14:52:14,954 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+14:52:14,956 DEBUG queryById:145 : <==      Total: 1
+14:52:14,958 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+14:52:14,958 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+14:52:14,963 DEBUG queryById:145 : <==      Total: 1
+14:52:14,965 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+14:52:14,966 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+14:52:14,979 DEBUG queryById:145 : <==      Total: 1
+14:52:14,992 DEBUG findSectionByStudent:145 : ==>  Preparing: select * from section as s inner join (select * from transcript where studentId=?) as t on t.sectionNo =s.sectionNo left join course on s.courseNo=course.courseNo 
+14:52:14,993 DEBUG findSectionByStudent:145 : ==> Parameters: 09143602(String)
+14:52:15,001 DEBUG findSectionByStudent:145 : <==      Total: 2
+14:52:16,701 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+14:52:16,702 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+14:52:16,704 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+14:52:16,706 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+14:52:16,708 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+14:52:16,709 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+14:52:16,710 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+14:52:16,711 DEBUG getTotal:145 : ==> Parameters: 
+14:52:16,712 DEBUG getTotal:145 : <==      Total: 1
+14:52:18,410 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+14:52:18,410 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+14:52:18,417 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+15:10:37,155 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:10:37,159 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:10:37,162 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:10:37,162 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:10:37,163 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:10:37,165 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:10:37,166 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:10:37,167 DEBUG getTotal:145 : ==> Parameters: 
+15:10:37,168 DEBUG getTotal:145 : <==      Total: 1
+15:10:38,356 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+15:10:38,357 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+15:10:38,361 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+15:13:14,911 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+15:13:14,967 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+15:13:15,004 DEBUG queryById:145 : <==      Total: 1
+15:13:15,008 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+15:13:15,009 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+15:13:15,017 DEBUG queryById:145 : <==      Total: 1
+15:13:15,020 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+15:13:15,023 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+15:13:15,027 DEBUG queryById:145 : <==      Total: 1
+15:13:15,114 DEBUG findSectionByStudent:145 : ==>  Preparing: select * from section as s inner join (select * from transcript where studentId=?) as t on t.sectionNo =s.sectionNo left join course on s.courseNo=course.courseNo 
+15:13:15,120 DEBUG findSectionByStudent:145 : ==> Parameters: 09143602(String)
+15:13:15,127 DEBUG findSectionByStudent:145 : <==      Total: 2
+15:13:18,168 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:13:18,169 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:13:18,174 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:13:18,176 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:13:18,179 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:13:18,181 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:13:18,183 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:13:18,184 DEBUG getTotal:145 : ==> Parameters: 
+15:13:18,187 DEBUG getTotal:145 : <==      Total: 1
+15:13:20,085 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+15:13:20,087 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+15:13:20,093 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+15:15:14,576 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+15:15:14,577 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+15:15:14,581 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+15:19:28,164 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+15:19:28,166 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+15:19:28,172 DEBUG queryById:145 : <==      Total: 1
+15:19:28,173 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+15:19:28,174 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+15:19:28,176 DEBUG queryById:145 : <==      Total: 1
+15:19:28,177 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+15:19:28,178 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+15:19:28,180 DEBUG queryById:145 : <==      Total: 1
+15:19:28,191 DEBUG findSectionByStudent:145 : ==>  Preparing: select * from section as s inner join (select * from transcript where studentId=?) as t on t.sectionNo =s.sectionNo left join course on s.courseNo=course.courseNo 
+15:19:28,193 DEBUG findSectionByStudent:145 : ==> Parameters: 09143602(String)
+15:19:28,197 DEBUG findSectionByStudent:145 : <==      Total: 2
+15:20:10,542 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:20:10,544 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:20:10,547 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:20:10,548 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:20:10,551 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:20:10,564 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:20:10,569 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:20:10,571 DEBUG getTotal:145 : ==> Parameters: 
+15:20:10,575 DEBUG getTotal:145 : <==      Total: 1
+15:20:11,018 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:20:11,019 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:20:11,021 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:20:11,023 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:20:11,024 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:20:11,026 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:20:11,027 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:20:11,028 DEBUG getTotal:145 : ==> Parameters: 
+15:20:11,035 DEBUG getTotal:145 : <==      Total: 1
+15:20:13,781 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+15:20:13,782 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+15:20:13,785 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+15:23:03,681 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:23:03,683 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:23:03,685 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:23:03,686 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:23:03,687 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:23:03,689 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:23:03,690 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:23:03,691 DEBUG getTotal:145 : ==> Parameters: 
+15:23:03,692 DEBUG getTotal:145 : <==      Total: 1
+15:23:04,552 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:23:04,553 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:23:04,555 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:23:04,557 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:23:04,558 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:23:04,560 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:23:04,561 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:23:04,562 DEBUG getTotal:145 : ==> Parameters: 
+15:23:04,563 DEBUG getTotal:145 : <==      Total: 1
+15:23:05,491 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:23:05,493 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:23:05,495 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:23:05,496 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:23:05,496 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:23:05,499 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:23:05,500 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:23:05,501 DEBUG getTotal:145 : ==> Parameters: 
+15:23:05,502 DEBUG getTotal:145 : <==      Total: 1
+15:23:06,042 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:23:06,044 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:23:06,046 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:23:06,047 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:23:06,048 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:23:06,050 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:23:06,051 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:23:06,052 DEBUG getTotal:145 : ==> Parameters: 
+15:23:06,059 DEBUG getTotal:145 : <==      Total: 1
+15:23:06,859 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+15:23:06,860 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+15:23:06,865 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+15:24:35,705 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:24:35,706 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:35,708 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:24:35,711 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:24:35,712 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:35,715 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:24:35,716 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:24:35,717 DEBUG getTotal:145 : ==> Parameters: 
+15:24:35,719 DEBUG getTotal:145 : <==      Total: 1
+15:24:36,305 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:24:36,306 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:36,307 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:24:36,308 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:24:36,309 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:36,311 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:24:36,312 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:24:36,312 DEBUG getTotal:145 : ==> Parameters: 
+15:24:36,315 DEBUG getTotal:145 : <==      Total: 1
+15:24:36,761 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:24:36,762 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:36,765 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:24:36,766 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:24:36,767 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:36,771 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:24:36,773 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:24:36,774 DEBUG getTotal:145 : ==> Parameters: 
+15:24:36,776 DEBUG getTotal:145 : <==      Total: 1
+15:24:36,945 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:24:36,948 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:36,950 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:24:36,951 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:24:36,953 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:36,956 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:24:36,958 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:24:36,958 DEBUG getTotal:145 : ==> Parameters: 
+15:24:36,960 DEBUG getTotal:145 : <==      Total: 1
+15:24:37,123 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:24:37,125 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:37,126 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:24:37,127 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:24:37,128 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:37,130 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:24:37,131 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:24:37,132 DEBUG getTotal:145 : ==> Parameters: 
+15:24:37,133 DEBUG getTotal:145 : <==      Total: 1
+15:24:37,312 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:24:37,314 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:37,316 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:24:37,317 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:24:37,318 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:37,320 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:24:37,321 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:24:37,321 DEBUG getTotal:145 : ==> Parameters: 
+15:24:37,323 DEBUG getTotal:145 : <==      Total: 1
+15:24:37,587 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:24:37,588 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:37,589 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:24:37,590 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:24:37,591 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:37,593 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:24:37,594 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:24:37,596 DEBUG getTotal:145 : ==> Parameters: 
+15:24:37,598 DEBUG getTotal:145 : <==      Total: 1
+15:24:37,878 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:24:37,881 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:37,883 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:24:37,883 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:24:37,884 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:37,886 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:24:37,892 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:24:37,893 DEBUG getTotal:145 : ==> Parameters: 
+15:24:37,895 DEBUG getTotal:145 : <==      Total: 1
+15:24:38,072 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:24:38,073 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:38,075 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:24:38,076 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:24:38,076 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:38,079 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:24:38,080 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:24:38,080 DEBUG getTotal:145 : ==> Parameters: 
+15:24:38,082 DEBUG getTotal:145 : <==      Total: 1
+15:24:38,261 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:24:38,266 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:38,268 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:24:38,269 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:24:38,270 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:38,272 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:24:38,274 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:24:38,275 DEBUG getTotal:145 : ==> Parameters: 
+15:24:38,277 DEBUG getTotal:145 : <==      Total: 1
+15:24:38,490 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:24:38,491 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:38,493 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:24:38,494 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:24:38,494 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:38,500 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:24:38,501 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:24:38,501 DEBUG getTotal:145 : ==> Parameters: 
+15:24:38,503 DEBUG getTotal:145 : <==      Total: 1
+15:24:38,674 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:24:38,675 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:38,676 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:24:38,677 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:24:38,678 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:38,681 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:24:38,682 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:24:38,683 DEBUG getTotal:145 : ==> Parameters: 
+15:24:38,684 DEBUG getTotal:145 : <==      Total: 1
+15:24:38,908 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:24:38,909 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:38,911 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:24:38,912 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:24:38,913 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:38,915 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:24:38,917 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:24:38,918 DEBUG getTotal:145 : ==> Parameters: 
+15:24:38,919 DEBUG getTotal:145 : <==      Total: 1
+15:24:39,141 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:24:39,142 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:39,144 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:24:39,145 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:24:39,145 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:39,148 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:24:39,149 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:24:39,150 DEBUG getTotal:145 : ==> Parameters: 
+15:24:39,151 DEBUG getTotal:145 : <==      Total: 1
+15:24:39,938 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:24:39,940 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:39,942 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:24:39,942 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:24:39,943 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:39,945 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:24:39,946 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:24:39,947 DEBUG getTotal:145 : ==> Parameters: 
+15:24:39,948 DEBUG getTotal:145 : <==      Total: 1
+15:24:40,448 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:24:40,450 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:40,451 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:24:40,452 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:24:40,453 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:24:40,454 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:24:40,456 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:24:40,457 DEBUG getTotal:145 : ==> Parameters: 
+15:24:40,458 DEBUG getTotal:145 : <==      Total: 1
+15:24:41,365 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+15:24:41,365 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+15:24:41,368 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+15:43:05,481 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+15:43:05,510 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+15:43:05,522 DEBUG queryById:145 : <==      Total: 1
+15:43:05,525 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+15:43:05,525 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+15:43:05,528 DEBUG queryById:145 : <==      Total: 1
+15:43:05,529 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+15:43:05,529 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+15:43:05,531 DEBUG queryById:145 : <==      Total: 1
+15:43:05,559 DEBUG findSectionByStudent:145 : ==>  Preparing: select * from section as s inner join (select * from transcript where studentId=?) as t on t.sectionNo =s.sectionNo left join course on s.courseNo=course.courseNo 
+15:43:05,561 DEBUG findSectionByStudent:145 : ==> Parameters: 09143602(String)
+15:43:05,566 DEBUG findSectionByStudent:145 : <==      Total: 2
+15:43:08,577 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:43:08,578 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:43:08,580 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:43:08,583 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:43:08,584 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:43:08,586 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:43:08,588 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:43:08,589 DEBUG getTotal:145 : ==> Parameters: 
+15:43:08,590 DEBUG getTotal:145 : <==      Total: 1
+15:43:09,687 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+15:43:09,688 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+15:43:09,692 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+15:46:23,712 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:46:23,713 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:46:23,715 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:46:23,718 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:46:23,721 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:46:23,723 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:46:23,724 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:46:23,725 DEBUG getTotal:145 : ==> Parameters: 
+15:46:23,727 DEBUG getTotal:145 : <==      Total: 1
+15:46:25,053 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+15:46:25,054 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+15:46:25,058 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+15:47:37,949 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:47:37,950 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:47:37,953 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:47:37,954 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:47:37,956 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:47:37,959 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:47:37,962 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:47:37,963 DEBUG getTotal:145 : ==> Parameters: 
+15:47:37,964 DEBUG getTotal:145 : <==      Total: 1
+15:47:38,634 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:47:38,635 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:47:38,637 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:47:38,637 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:47:38,638 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:47:38,640 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:47:38,642 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:47:38,643 DEBUG getTotal:145 : ==> Parameters: 
+15:47:38,646 DEBUG getTotal:145 : <==      Total: 1
+15:47:39,804 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+15:47:39,805 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+15:47:39,808 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+15:49:06,881 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+15:49:06,883 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:49:06,886 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+15:49:06,889 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+15:49:06,890 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+15:49:06,892 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+15:49:06,894 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+15:49:06,895 DEBUG getTotal:145 : ==> Parameters: 
+15:49:06,896 DEBUG getTotal:145 : <==      Total: 1
+15:49:08,378 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+15:49:08,379 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+15:49:08,382 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+16:33:40,308 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+16:33:40,340 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+16:33:40,356 DEBUG queryById:145 : <==      Total: 1
+16:33:40,359 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+16:33:40,361 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+16:33:40,364 DEBUG queryById:145 : <==      Total: 1
+16:33:40,367 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+16:33:40,368 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+16:33:40,374 DEBUG queryById:145 : <==      Total: 1
+16:33:40,408 DEBUG findSectionByStudent:145 : ==>  Preparing: select * from section as s inner join (select * from transcript where studentId=?) as t on t.sectionNo =s.sectionNo left join course on s.courseNo=course.courseNo 
+16:33:40,411 DEBUG findSectionByStudent:145 : ==> Parameters: 09143602(String)
+16:33:40,417 DEBUG findSectionByStudent:145 : <==      Total: 2
+16:33:42,546 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+16:33:42,548 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+16:33:42,551 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+16:33:42,555 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+16:33:42,557 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+16:33:42,561 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+16:33:42,564 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+16:33:42,565 DEBUG getTotal:145 : ==> Parameters: 
+16:33:42,569 DEBUG getTotal:145 : <==      Total: 1
+16:33:43,360 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+16:33:43,361 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+16:33:43,364 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+16:35:27,431 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+16:35:27,432 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+16:35:27,434 DEBUG queryById:145 : <==      Total: 1
+16:35:27,436 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+16:35:27,436 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+16:35:27,438 DEBUG queryById:145 : <==      Total: 1
+16:35:27,440 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+16:35:27,441 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+16:35:27,443 DEBUG queryById:145 : <==      Total: 1
+16:35:27,453 DEBUG findSectionByStudent:145 : ==>  Preparing: select * from section as s inner join (select * from transcript where studentId=?) as t on t.sectionNo =s.sectionNo left join course on s.courseNo=course.courseNo 
+16:35:27,455 DEBUG findSectionByStudent:145 : ==> Parameters: 09143602(String)
+16:35:27,459 DEBUG findSectionByStudent:145 : <==      Total: 2
+16:36:24,802 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+16:36:24,803 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+16:36:24,806 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+16:36:24,807 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+16:36:24,808 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+16:36:24,811 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+16:36:24,813 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+16:36:24,815 DEBUG getTotal:145 : ==> Parameters: 
+16:36:24,817 DEBUG getTotal:145 : <==      Total: 1
+16:36:25,394 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+16:36:25,396 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+16:36:25,399 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+16:36:25,400 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+16:36:25,401 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+16:36:25,405 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+16:36:25,406 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+16:36:25,408 DEBUG getTotal:145 : ==> Parameters: 
+16:36:25,409 DEBUG getTotal:145 : <==      Total: 1
+16:36:25,856 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+16:36:25,857 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+16:36:25,859 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+16:36:25,860 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+16:36:25,861 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+16:36:25,864 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+16:36:25,867 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+16:36:25,867 DEBUG getTotal:145 : ==> Parameters: 
+16:36:25,869 DEBUG getTotal:145 : <==      Total: 1
+16:36:26,628 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+16:36:26,629 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+16:36:26,631 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+16:36:26,632 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+16:36:26,633 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+16:36:26,635 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+16:36:26,636 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+16:36:26,637 DEBUG getTotal:145 : ==> Parameters: 
+16:36:26,638 DEBUG getTotal:145 : <==      Total: 1
+16:36:27,459 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+16:36:27,460 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+16:36:27,463 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+16:36:44,756 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+16:36:44,757 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+16:36:44,759 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+16:36:44,760 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+16:36:44,761 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+16:36:44,763 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+16:36:44,765 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+16:36:44,765 DEBUG getTotal:145 : ==> Parameters: 
+16:36:44,768 DEBUG getTotal:145 : <==      Total: 1
+16:36:46,074 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+16:36:46,076 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+16:36:46,078 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+16:44:58,850 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+16:44:58,851 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+16:44:58,853 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+16:44:58,854 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+16:44:58,855 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+16:44:58,857 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+16:44:58,858 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+16:44:58,859 DEBUG getTotal:145 : ==> Parameters: 
+16:44:58,860 DEBUG getTotal:145 : <==      Total: 1
+16:44:59,406 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+16:44:59,407 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+16:44:59,408 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+16:44:59,410 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+16:44:59,411 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+16:44:59,413 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+16:44:59,415 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+16:44:59,415 DEBUG getTotal:145 : ==> Parameters: 
+16:44:59,417 DEBUG getTotal:145 : <==      Total: 1
+16:45:00,034 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+16:45:00,035 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+16:45:00,037 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+16:45:00,038 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+16:45:00,040 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+16:45:00,042 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+16:45:00,043 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+16:45:00,043 DEBUG getTotal:145 : ==> Parameters: 
+16:45:00,045 DEBUG getTotal:145 : <==      Total: 1
+16:45:00,732 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+16:45:00,733 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+16:45:00,737 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+16:55:44,226 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+16:55:44,254 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+16:55:44,268 DEBUG queryById:145 : <==      Total: 1
+16:55:44,271 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+16:55:44,272 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+16:55:44,274 DEBUG queryById:145 : <==      Total: 1
+16:55:44,275 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+16:55:44,276 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+16:55:44,278 DEBUG queryById:145 : <==      Total: 1
+16:55:44,309 DEBUG findSectionByStudent:145 : ==>  Preparing: select * from section as s inner join (select * from transcript where studentId=?) as t on t.sectionNo =s.sectionNo left join course on s.courseNo=course.courseNo 
+16:55:44,312 DEBUG findSectionByStudent:145 : ==> Parameters: 09143602(String)
+16:55:44,316 DEBUG findSectionByStudent:145 : <==      Total: 2
+16:55:45,950 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+16:55:45,951 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+16:55:45,953 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+16:55:45,955 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+16:55:45,955 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+16:55:45,957 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+16:55:45,958 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+16:55:45,959 DEBUG getTotal:145 : ==> Parameters: 
+16:55:45,961 DEBUG getTotal:145 : <==      Total: 1
+16:55:46,942 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+16:55:46,943 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+16:55:46,948 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+16:58:11,282 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+16:58:11,314 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+16:58:11,332 DEBUG queryById:145 : <==      Total: 1
+16:58:11,335 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+16:58:11,336 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+16:58:11,338 DEBUG queryById:145 : <==      Total: 1
+16:58:11,340 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+16:58:11,341 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+16:58:11,346 DEBUG queryById:145 : <==      Total: 1
+16:58:11,388 DEBUG findSectionByStudent:145 : ==>  Preparing: select * from section as s inner join (select * from transcript where studentId=?) as t on t.sectionNo =s.sectionNo left join course on s.courseNo=course.courseNo 
+16:58:11,390 DEBUG findSectionByStudent:145 : ==> Parameters: 09143602(String)
+16:58:11,393 DEBUG findSectionByStudent:145 : <==      Total: 2
+16:58:13,125 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+16:58:13,132 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+16:58:13,134 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+16:58:13,137 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+16:58:13,137 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+16:58:13,140 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+16:58:13,141 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+16:58:13,142 DEBUG getTotal:145 : ==> Parameters: 
+16:58:13,145 DEBUG getTotal:145 : <==      Total: 1
+16:58:14,319 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+16:58:14,320 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+16:58:14,323 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+16:58:32,027 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+16:58:32,028 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+16:58:32,030 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+16:58:32,031 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+16:58:32,033 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+16:58:32,035 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+16:58:32,036 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+16:58:32,037 DEBUG getTotal:145 : ==> Parameters: 
+16:58:32,039 DEBUG getTotal:145 : <==      Total: 1
+16:58:32,624 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+16:58:32,625 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+16:58:32,627 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+16:58:32,628 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+16:58:32,628 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+16:58:32,630 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+16:58:32,631 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+16:58:32,634 DEBUG getTotal:145 : ==> Parameters: 
+16:58:32,636 DEBUG getTotal:145 : <==      Total: 1
+16:58:32,798 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+16:58:32,801 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+16:58:32,802 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+16:58:32,803 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+16:58:32,805 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+16:58:32,809 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+16:58:32,810 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+16:58:32,810 DEBUG getTotal:145 : ==> Parameters: 
+16:58:32,812 DEBUG getTotal:145 : <==      Total: 1
+16:58:34,667 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+16:58:34,668 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+16:58:34,672 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+17:06:16,720 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+17:06:16,751 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+17:06:16,772 DEBUG queryById:145 : <==      Total: 1
+17:06:16,775 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+17:06:16,775 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+17:06:16,778 DEBUG queryById:145 : <==      Total: 1
+17:06:16,779 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+17:06:16,780 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+17:06:16,781 DEBUG queryById:145 : <==      Total: 1
+17:06:16,812 DEBUG findSectionByStudent:145 : ==>  Preparing: select * from section as s inner join (select * from transcript where studentId=?) as t on t.sectionNo =s.sectionNo left join course on s.courseNo=course.courseNo 
+17:06:16,815 DEBUG findSectionByStudent:145 : ==> Parameters: 09143602(String)
+17:06:16,820 DEBUG findSectionByStudent:145 : <==      Total: 2
+17:07:41,125 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+17:07:41,125 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+17:07:41,126 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+17:07:41,126 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+17:07:41,126 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+17:07:41,130 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:07:41,129 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:07:41,129 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:07:41,127 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:07:41,135 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+17:07:41,136 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+17:07:41,137 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+17:07:41,138 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:07:41,135 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+17:07:41,134 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+17:07:41,140 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+17:07:41,131 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:07:41,141 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:07:41,141 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+17:07:41,140 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+17:07:41,145 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+17:07:41,139 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+17:07:41,147 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+17:07:41,146 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+17:07:41,144 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:07:41,144 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+17:07:41,150 DEBUG getTotal:145 : ==> Parameters: 
+17:07:41,148 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:07:41,148 DEBUG getTotal:145 : ==> Parameters: 
+17:07:41,153 DEBUG getTotal:145 : <==      Total: 1
+17:07:41,154 DEBUG getTotal:145 : <==      Total: 1
+17:07:41,155 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+17:07:41,153 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+17:07:41,152 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+17:07:41,161 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+17:07:41,162 DEBUG getTotal:145 : ==> Parameters: 
+17:07:41,163 DEBUG getTotal:145 : <==      Total: 1
+17:07:41,159 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+17:07:41,168 DEBUG getTotal:145 : ==> Parameters: 
+17:07:41,170 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:07:41,170 DEBUG getTotal:145 : <==      Total: 1
+17:07:41,179 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+17:07:41,181 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+17:07:41,182 DEBUG getTotal:145 : ==> Parameters: 
+17:07:41,183 DEBUG getTotal:145 : <==      Total: 1
+17:07:41,285 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+17:07:41,286 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:07:41,287 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+17:07:41,288 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+17:07:41,289 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:07:41,291 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+17:07:41,294 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+17:07:41,294 DEBUG getTotal:145 : ==> Parameters: 
+17:07:41,298 DEBUG getTotal:145 : <==      Total: 1
+17:07:41,551 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+17:07:41,552 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:07:41,554 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+17:07:41,554 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+17:07:41,555 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:07:41,558 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+17:07:41,559 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+17:07:41,561 DEBUG getTotal:145 : ==> Parameters: 
+17:07:41,562 DEBUG getTotal:145 : <==      Total: 1
+17:07:43,394 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+17:07:43,395 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:07:43,396 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+17:07:43,397 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 10 
+17:07:43,399 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:07:43,402 DEBUG fuzzyFindCourse:145 : <==      Total: 9
+17:07:43,403 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+17:07:43,404 DEBUG getTotal:145 : ==> Parameters: 
+17:07:43,406 DEBUG getTotal:145 : <==      Total: 1
+17:08:31,553 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+17:08:31,554 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+17:08:31,559 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+17:09:51,887 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+17:09:51,888 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:09:51,890 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+17:09:51,892 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+17:09:51,893 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:09:51,895 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+17:09:51,897 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+17:09:51,897 DEBUG getTotal:145 : ==> Parameters: 
+17:09:51,899 DEBUG getTotal:145 : <==      Total: 1
+17:09:52,516 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+17:09:52,519 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:09:52,522 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+17:09:52,523 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+17:09:52,525 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:09:52,526 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+17:09:52,527 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+17:09:52,528 DEBUG getTotal:145 : ==> Parameters: 
+17:09:52,529 DEBUG getTotal:145 : <==      Total: 1
+17:09:55,380 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+17:09:55,381 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:09:55,384 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+17:09:55,385 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 10 
+17:09:55,386 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:09:55,389 DEBUG fuzzyFindCourse:145 : <==      Total: 9
+17:09:55,390 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+17:09:55,392 DEBUG getTotal:145 : ==> Parameters: 
+17:09:55,394 DEBUG getTotal:145 : <==      Total: 1
+17:09:57,628 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+17:09:57,630 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+17:09:57,633 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+17:12:31,071 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+17:12:31,073 DEBUG findProfessorById:145 : ==> Parameters: 09143602(String)
+17:12:31,076 DEBUG findProfessorById:145 : <==      Total: 0
+17:12:35,541 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+17:12:35,542 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+17:12:35,544 DEBUG findProfessorById:145 : <==      Total: 1
+17:12:35,544 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+17:12:35,545 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+17:12:35,546 DEBUG findProfessorById:145 : <==      Total: 1
+17:12:35,548 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+17:12:35,548 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+17:12:35,550 DEBUG findProfessorById:145 : <==      Total: 1
+17:12:40,146 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+17:12:40,147 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:12:40,149 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+17:12:40,149 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+17:12:40,150 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:12:40,152 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+17:12:40,153 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+17:12:40,154 DEBUG getTotal:145 : ==> Parameters: 
+17:12:40,155 DEBUG getTotal:145 : <==      Total: 1
+17:12:44,248 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+17:12:44,249 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:12:44,251 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+17:12:44,251 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+17:12:44,252 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:12:44,259 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+17:12:44,260 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+17:12:44,261 DEBUG getTotal:145 : ==> Parameters: 
+17:12:44,262 DEBUG getTotal:145 : <==      Total: 1
+17:12:51,447 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+17:12:51,448 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:12:51,449 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+17:12:51,450 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+17:12:51,451 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:12:51,452 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+17:12:51,453 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+17:12:51,455 DEBUG getTotal:145 : ==> Parameters: 
+17:12:51,456 DEBUG getTotal:145 : <==      Total: 1
+17:13:35,361 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+17:13:35,363 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:13:35,364 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+17:13:35,365 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 10 
+17:13:35,366 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+17:13:35,368 DEBUG fuzzyFindCourse:145 : <==      Total: 9
+17:13:35,370 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+17:13:35,370 DEBUG getTotal:145 : ==> Parameters: 
+17:13:35,371 DEBUG getTotal:145 : <==      Total: 1
+17:13:37,367 DEBUG getSectionByCourseNo:145 : ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+17:13:37,368 DEBUG getSectionByCourseNo:145 : ==> Parameters: CMP283(String)
+17:13:37,371 DEBUG getSectionByCourseNo:145 : <==      Total: 3
+17:16:41,598 DEBUG findSectionByProfessorId:145 : ==>  Preparing: select * from course as c inner join (select * from section where professorId=?) as s on c.courseNo=s.courseNo left join professor as p on s.professorId=p.id 
+17:16:41,599 DEBUG findSectionByProfessorId:145 : ==> Parameters: 09143600(String)
+17:16:41,610 DEBUG findSectionByProfessorId:145 : <==      Total: 7
+17:16:42,948 DEBUG findStudentBySectionNo:145 : ==>  Preparing: select * from transcript as t inner join (select * from section where sectionNo=?) as s on t.sectionNo =s.sectionNo left join students on t.studentId=students.id 
+17:16:42,949 DEBUG findStudentBySectionNo:145 : ==> Parameters: 66(String)
+17:16:42,950 DEBUG findStudentBySectionNo:145 : <==      Total: 0
+17:16:44,034 DEBUG findStudentBySectionNo:145 : ==>  Preparing: select * from transcript as t inner join (select * from section where sectionNo=?) as s on t.sectionNo =s.sectionNo left join students on t.studentId=students.id 
+17:16:44,035 DEBUG findStudentBySectionNo:145 : ==> Parameters: 15(String)
+17:16:44,037 DEBUG findStudentBySectionNo:145 : <==      Total: 0
+17:16:46,864 DEBUG findStudentBySectionNo:145 : ==>  Preparing: select * from transcript as t inner join (select * from section where sectionNo=?) as s on t.sectionNo =s.sectionNo left join students on t.studentId=students.id 
+17:16:46,865 DEBUG findStudentBySectionNo:145 : ==> Parameters: 3(String)
+17:16:46,867 DEBUG findStudentBySectionNo:145 : <==      Total: 1
+20:12:31,994 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:12:32,071 DEBUG findProfessorById:145 : ==> Parameters: 09143602(String)
+20:12:32,102 DEBUG findProfessorById:145 : <==      Total: 0
+20:12:33,813 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:12:33,815 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:12:33,820 DEBUG findProfessorById:145 : <==      Total: 1
+20:12:33,822 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:12:33,823 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:12:33,825 DEBUG findProfessorById:145 : <==      Total: 1
+20:12:33,827 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:12:33,828 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:12:33,832 DEBUG findProfessorById:145 : <==      Total: 1
+20:12:36,899 DEBUG fuzzyFindCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+20:12:36,905 DEBUG fuzzyFindCourse_COUNT:145 : ==> Parameters: %%(String), %%(String), %%(String)
+20:12:36,911 DEBUG fuzzyFindCourse_COUNT:145 : <==      Total: 1
+20:12:36,913 DEBUG fuzzyFindCourse:145 : ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+20:12:36,919 DEBUG fuzzyFindCourse:145 : ==> Parameters: %%(String), %%(String), %%(String)
+20:12:36,924 DEBUG fuzzyFindCourse:145 : <==      Total: 3
+20:12:36,925 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:12:36,926 DEBUG getTotal:145 : ==> Parameters: 
+20:12:36,931 DEBUG getTotal:145 : <==      Total: 1
+20:12:37,462 DEBUG findSectionByProfessorId:145 : ==>  Preparing: select * from course as c inner join (select * from section where professorId=?) as s on c.courseNo=s.courseNo left join professor as p on s.professorId=p.id 
+20:12:37,463 DEBUG findSectionByProfessorId:145 : ==> Parameters: 09143600(String)
+20:12:37,471 DEBUG findSectionByProfessorId:145 : <==      Total: 7

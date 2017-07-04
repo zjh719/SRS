@@ -1,0 +1,189 @@
+2017-06-26 00:51:12,430 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-06-26 00:51:12,482 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-06-26 00:51:12,510 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-06-26 00:51:12,514 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-06-26 00:51:12,515 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-06-26 00:51:12,518 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-06-26 00:51:12,520 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-06-26 00:51:12,521 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-06-26 00:51:12,524 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-06-26 09:22:41,998 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 09:22:42,039 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 09:22:42,065 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 09:22:42,068 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 09:22:42,069 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 09:22:42,071 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 09:22:42,072 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 09:22:42,073 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 09:22:42,077 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 09:22:54,407 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-06-26 09:22:54,409 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-06-26 09:22:54,412 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-06-26 09:22:54,414 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-06-26 09:22:54,415 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-06-26 09:22:54,418 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-06-26 09:22:54,420 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-06-26 09:22:54,422 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-06-26 09:22:54,424 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-06-26 09:48:15,407 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-06-26 09:48:15,408 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-06-26 09:48:15,412 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-06-26 09:48:15,415 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-06-26 09:48:15,418 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-06-26 09:48:15,422 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-06-26 09:48:31,285 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 09:48:31,286 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 09:48:31,288 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 09:48:31,289 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 09:48:31,289 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 09:48:31,291 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 09:48:31,292 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 09:48:31,293 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 09:48:31,294 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 11:01:13,049 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 11:01:13,054 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 11:01:13,060 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 11:01:13,063 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 11:01:13,063 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 11:01:13,066 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 11:01:13,070 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 11:01:13,071 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 11:01:13,076 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 15:36:01,963 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 15:36:02,062 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 15:36:02,093 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 15:36:02,096 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 15:36:02,097 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 15:36:02,100 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 15:36:02,102 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 15:36:02,102 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 15:36:02,105 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 16:23:37,446 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-06-26 16:23:37,449 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-06-26 16:23:37,457 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-06-26 16:23:37,459 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-06-26 16:23:37,460 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-06-26 16:23:37,462 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-06-26 16:23:37,465 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-06-26 16:23:37,468 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-06-26 16:23:37,471 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-06-26 16:23:56,037 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 16:23:56,041 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 16:23:56,044 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 16:23:56,046 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 16:23:56,047 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 16:23:56,053 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 16:23:56,055 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 16:23:56,056 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 16:23:56,058 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 16:34:57,787 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-06-26 16:34:57,789 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143600(String)
+2017-06-26 16:34:57,791 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 0
+2017-06-26 16:35:13,139 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 16:35:13,140 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 16:35:13,143 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 16:35:13,144 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 16:35:13,145 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 16:35:13,147 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 16:35:13,149 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 16:35:13,151 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 16:35:13,152 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 16:59:06,665 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 16:59:06,690 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 16:59:06,705 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 16:59:06,708 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 16:59:06,710 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 16:59:06,712 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 16:59:06,713 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 16:59:06,715 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 16:59:06,717 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 18:37:10,753 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 18:37:10,792 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 18:37:10,814 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 18:37:10,818 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 18:37:10,819 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 18:37:10,822 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 18:37:10,824 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 18:37:10,825 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 18:37:10,828 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 18:37:45,286 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-06-26 18:37:45,287 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-06-26 18:37:45,290 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-06-26 18:37:45,292 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-06-26 18:37:45,293 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-06-26 18:37:45,295 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-06-26 18:37:45,297 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-06-26 18:37:45,299 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-06-26 18:37:45,302 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-06-26 20:33:38,262 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 20:33:38,299 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 20:33:38,318 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 20:33:38,320 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 20:33:38,321 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 20:33:38,324 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 20:33:38,326 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 20:33:38,327 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 20:33:38,330 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 20:38:00,769 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 20:38:00,798 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143602(String)
+2017-06-26 20:38:00,810 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 0
+2017-06-26 20:38:05,300 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 20:38:05,301 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 20:38:05,305 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 20:38:05,307 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 20:38:05,309 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 20:38:05,311 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 20:38:05,313 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 20:38:05,314 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 20:38:05,316 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 20:48:02,684 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 20:48:02,685 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 20:48:02,689 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 20:48:02,691 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 20:48:02,692 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 20:48:02,694 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 20:48:02,695 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 20:48:02,697 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 20:48:02,701 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 20:57:05,465 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 20:57:05,466 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 20:57:05,471 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 20:57:05,472 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 20:57:05,473 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 20:57:05,475 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 20:57:05,476 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 20:57:05,477 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 20:57:05,479 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 20:59:14,116 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 20:59:14,117 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 20:59:14,119 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 20:59:14,121 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 20:59:14,121 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 20:59:14,123 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 20:59:14,126 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 20:59:14,127 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 20:59:14,131 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 21:01:57,430 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 21:01:57,432 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143602(String)
+2017-06-26 21:01:57,434 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 0
+2017-06-26 21:01:58,986 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 21:01:58,987 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143602(String)
+2017-06-26 21:01:58,988 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 0
+2017-06-26 21:02:01,727 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 21:02:01,728 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 21:02:01,729 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 21:02:01,732 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 21:02:01,732 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 21:02:01,734 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 21:02:01,736 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 21:02:01,737 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 21:02:01,738 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 21:03:47,457 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 21:03:47,458 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 21:03:47,462 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 21:03:47,464 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 21:03:47,465 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 21:03:47,467 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-06-26 21:03:47,468 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-06-26 21:03:47,469 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-06-26 21:03:47,471 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1

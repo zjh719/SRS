@@ -1,0 +1,189 @@
+00:51:12,430 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+00:51:12,482 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+00:51:12,510 DEBUG queryById:145 : <==      Total: 1
+00:51:12,514 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+00:51:12,515 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+00:51:12,518 DEBUG queryById:145 : <==      Total: 1
+00:51:12,520 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+00:51:12,521 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+00:51:12,524 DEBUG queryById:145 : <==      Total: 1
+09:22:41,998 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+09:22:42,039 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+09:22:42,065 DEBUG findProfessorById:145 : <==      Total: 1
+09:22:42,068 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+09:22:42,069 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+09:22:42,071 DEBUG findProfessorById:145 : <==      Total: 1
+09:22:42,072 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+09:22:42,073 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+09:22:42,077 DEBUG findProfessorById:145 : <==      Total: 1
+09:22:54,407 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+09:22:54,409 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+09:22:54,412 DEBUG queryById:145 : <==      Total: 1
+09:22:54,414 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+09:22:54,415 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+09:22:54,418 DEBUG queryById:145 : <==      Total: 1
+09:22:54,420 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+09:22:54,422 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+09:22:54,424 DEBUG queryById:145 : <==      Total: 1
+09:48:15,407 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+09:48:15,408 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+09:48:15,412 DEBUG queryById:145 : <==      Total: 1
+09:48:15,415 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+09:48:15,418 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+09:48:15,422 DEBUG queryById:145 : <==      Total: 1
+09:48:31,285 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+09:48:31,286 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+09:48:31,288 DEBUG findProfessorById:145 : <==      Total: 1
+09:48:31,289 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+09:48:31,289 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+09:48:31,291 DEBUG findProfessorById:145 : <==      Total: 1
+09:48:31,292 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+09:48:31,293 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+09:48:31,294 DEBUG findProfessorById:145 : <==      Total: 1
+11:01:13,049 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+11:01:13,054 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+11:01:13,060 DEBUG findProfessorById:145 : <==      Total: 1
+11:01:13,063 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+11:01:13,063 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+11:01:13,066 DEBUG findProfessorById:145 : <==      Total: 1
+11:01:13,070 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+11:01:13,071 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+11:01:13,076 DEBUG findProfessorById:145 : <==      Total: 1
+15:36:01,963 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+15:36:02,062 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+15:36:02,093 DEBUG findProfessorById:145 : <==      Total: 1
+15:36:02,096 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+15:36:02,097 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+15:36:02,100 DEBUG findProfessorById:145 : <==      Total: 1
+15:36:02,102 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+15:36:02,102 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+15:36:02,105 DEBUG findProfessorById:145 : <==      Total: 1
+16:23:37,446 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+16:23:37,449 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+16:23:37,457 DEBUG queryById:145 : <==      Total: 1
+16:23:37,459 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+16:23:37,460 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+16:23:37,462 DEBUG queryById:145 : <==      Total: 1
+16:23:37,465 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+16:23:37,468 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+16:23:37,471 DEBUG queryById:145 : <==      Total: 1
+16:23:56,037 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+16:23:56,041 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+16:23:56,044 DEBUG findProfessorById:145 : <==      Total: 1
+16:23:56,046 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+16:23:56,047 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+16:23:56,053 DEBUG findProfessorById:145 : <==      Total: 1
+16:23:56,055 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+16:23:56,056 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+16:23:56,058 DEBUG findProfessorById:145 : <==      Total: 1
+16:34:57,787 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+16:34:57,789 DEBUG queryById:145 : ==> Parameters: 09143600(String)
+16:34:57,791 DEBUG queryById:145 : <==      Total: 0
+16:35:13,139 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+16:35:13,140 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+16:35:13,143 DEBUG findProfessorById:145 : <==      Total: 1
+16:35:13,144 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+16:35:13,145 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+16:35:13,147 DEBUG findProfessorById:145 : <==      Total: 1
+16:35:13,149 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+16:35:13,151 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+16:35:13,152 DEBUG findProfessorById:145 : <==      Total: 1
+16:59:06,665 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+16:59:06,690 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+16:59:06,705 DEBUG findProfessorById:145 : <==      Total: 1
+16:59:06,708 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+16:59:06,710 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+16:59:06,712 DEBUG findProfessorById:145 : <==      Total: 1
+16:59:06,713 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+16:59:06,715 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+16:59:06,717 DEBUG findProfessorById:145 : <==      Total: 1
+18:37:10,753 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+18:37:10,792 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+18:37:10,814 DEBUG findProfessorById:145 : <==      Total: 1
+18:37:10,818 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+18:37:10,819 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+18:37:10,822 DEBUG findProfessorById:145 : <==      Total: 1
+18:37:10,824 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+18:37:10,825 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+18:37:10,828 DEBUG findProfessorById:145 : <==      Total: 1
+18:37:45,286 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+18:37:45,287 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+18:37:45,290 DEBUG queryById:145 : <==      Total: 1
+18:37:45,292 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+18:37:45,293 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+18:37:45,295 DEBUG queryById:145 : <==      Total: 1
+18:37:45,297 DEBUG queryById:145 : ==>  Preparing: select * from students where id=? 
+18:37:45,299 DEBUG queryById:145 : ==> Parameters: 09143602(String)
+18:37:45,302 DEBUG queryById:145 : <==      Total: 1
+20:33:38,262 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:33:38,299 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:33:38,318 DEBUG findProfessorById:145 : <==      Total: 1
+20:33:38,320 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:33:38,321 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:33:38,324 DEBUG findProfessorById:145 : <==      Total: 1
+20:33:38,326 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:33:38,327 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:33:38,330 DEBUG findProfessorById:145 : <==      Total: 1
+20:38:00,769 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:38:00,798 DEBUG findProfessorById:145 : ==> Parameters: 09143602(String)
+20:38:00,810 DEBUG findProfessorById:145 : <==      Total: 0
+20:38:05,300 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:38:05,301 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:38:05,305 DEBUG findProfessorById:145 : <==      Total: 1
+20:38:05,307 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:38:05,309 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:38:05,311 DEBUG findProfessorById:145 : <==      Total: 1
+20:38:05,313 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:38:05,314 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:38:05,316 DEBUG findProfessorById:145 : <==      Total: 1
+20:48:02,684 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:48:02,685 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:48:02,689 DEBUG findProfessorById:145 : <==      Total: 1
+20:48:02,691 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:48:02,692 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:48:02,694 DEBUG findProfessorById:145 : <==      Total: 1
+20:48:02,695 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:48:02,697 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:48:02,701 DEBUG findProfessorById:145 : <==      Total: 1
+20:57:05,465 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:57:05,466 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:57:05,471 DEBUG findProfessorById:145 : <==      Total: 1
+20:57:05,472 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:57:05,473 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:57:05,475 DEBUG findProfessorById:145 : <==      Total: 1
+20:57:05,476 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:57:05,477 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:57:05,479 DEBUG findProfessorById:145 : <==      Total: 1
+20:59:14,116 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:59:14,117 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:59:14,119 DEBUG findProfessorById:145 : <==      Total: 1
+20:59:14,121 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:59:14,121 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:59:14,123 DEBUG findProfessorById:145 : <==      Total: 1
+20:59:14,126 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:59:14,127 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:59:14,131 DEBUG findProfessorById:145 : <==      Total: 1
+21:01:57,430 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+21:01:57,432 DEBUG findProfessorById:145 : ==> Parameters: 09143602(String)
+21:01:57,434 DEBUG findProfessorById:145 : <==      Total: 0
+21:01:58,986 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+21:01:58,987 DEBUG findProfessorById:145 : ==> Parameters: 09143602(String)
+21:01:58,988 DEBUG findProfessorById:145 : <==      Total: 0
+21:02:01,727 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+21:02:01,728 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+21:02:01,729 DEBUG findProfessorById:145 : <==      Total: 1
+21:02:01,732 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+21:02:01,732 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+21:02:01,734 DEBUG findProfessorById:145 : <==      Total: 1
+21:02:01,736 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+21:02:01,737 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+21:02:01,738 DEBUG findProfessorById:145 : <==      Total: 1
+21:03:47,457 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+21:03:47,458 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+21:03:47,462 DEBUG findProfessorById:145 : <==      Total: 1
+21:03:47,464 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+21:03:47,465 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+21:03:47,467 DEBUG findProfessorById:145 : <==      Total: 1
+21:03:47,468 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+21:03:47,469 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+21:03:47,471 DEBUG findProfessorById:145 : <==      Total: 1

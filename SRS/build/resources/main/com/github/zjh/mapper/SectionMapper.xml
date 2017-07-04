@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.github.zjh.dao.SectionDao">
+    <!-- 返回类型 -->
+    <resultMap id="sectionList" type="com.github.zjh.domain.Section">
+    	   <!--Course表  -->
+        <result property="representedCourse.courseNo" column="courseNo"/>
+        <result property="representedCourse.courseName" column="courseName"/>
+        <result property="representedCourse.credits" column="credits"/>
+       	<!--professor表  -->
+        <result property="instructor.id" column="id"/>
+        <result property="instructor.name" column="name"/>
+        <result property="instructor.title" column="title"/>
+        <result property="instructor.department" column="department"/>
+        <result property="instructor.email" column="email"/>
+        <!--Section表  -->
+        <result property="sectionNo" column="sectionNo"/>
+        <result property="dayOfWeek" column="dayOfWeek"/>
+        <result property="timeOfDay" column="timeOfDay"/>
+        <result property="Room" column="room"/>
+        <result property="seatingCapacity" column="seatingCapacity"/>
+    </resultMap>
+    <!--Students表  -->
+    <resultMap type="com.github.zjh.domain.Students" id="students">
+        <result property="id" column="id"/>
+    	<result property="name" column="name"/>  
+    	<result property="password" column="password"/>  
+    	<result property="degree" column="degree"/>  
+    	<result property="email" column="email"/>  
+    	<result property="grade" column="grade"/>  
+    	<result property="major" column="major"/> 
+    </resultMap>
+    
+    
+    <!-- 添加课程 -->
+    <insert id="addSection" databaseId="mysql" useGeneratedKeys="true" keyProperty="id">
+    
+    insert into section(sectionNo,dayOfWeek,timeOfDay,room,seatingCapacity,courseNo) values(#{sectionNo},#{dayOfWeek},#{timeOfDay},#{Room},#{seatingCapacity},#{representedCourse.courseNo})
+    
+    </insert>
+    
+    
+    
+    
+     <!-- 删除课程 -->
+     <delete id="delete" parameterType="String" databaseId="mysql">
+     
+       delete  from section where sectionNo=#{sectionNo}
+     
+     </delete>
+     <update id="resetSection"  databaseId="mysql" >
+      update section set dayOfWeek=#{dayOfWeek},timeOfDay=#{timeOfDay},seatingCapacity=#{seatingCapacity},room=#{Room} where sectionNo=#{sectionNo}
+     </update>
+     
+     <!--根据CourseNo查Section表  -->
+    <select id="getSectionByCourseNo" resultMap="sectionList">
+       select * from section as s inner join 
+      	   (select * from course where courseNo=#{courseNo}) as c 
+      		on s.courseNo=c.courseNo
+      	    left join professor as p on s.professorId=p.id
+    
+    </select>
+    
+     <!--根据老师Id查Section表  -->
+     <select  id="findSectionByProfessorId" resultMap="sectionList">
+         select * from course as c inner join (select * from section where professorId=#{professorId}) as  s
+         on c.courseNo=s.courseNo left join professor as  p on s.professorId=p.id
+     </select>
+     
+     <!--根据sectionId查学生表  -->
+     
+     <select id ="findStudentBySectionNo" resultMap="students" >
+         select * from transcript as t inner join (select * from section where sectionNo=#{sectionNo}) as  s
+         on t.sectionNo =s.sectionNo left join students on t.studentId=students.id
+     
+     </select>
+     
+     
+       <!--根据studentsId查班次  -->
+     
+     <select id ="findSectionByStudent" resultMap="sectionList" >
+         select * from section as s inner join (select * from transcript where studentId=#{id}) as t
+         on t.sectionNo =s.sectionNo left join course on s.courseNo=course.courseNo
+     </select>
+    
+    
+      <!--根据CSno查班次  -->
+    <select id="findSectionByCSNo"  resultMap="sectionList">
+        select  * from section as s inner join
+        (select * from course  where courseNo =#{representedCourse.courseNo}) as
+        c on s.courseNo=c.courseNo and s.sectionNo=#{sectionNo}
+        left join professor as p on p.id=s.professorId
+    </select>
+</mapper>

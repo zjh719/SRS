@@ -1,0 +1,999 @@
+2017-07-04 10:06:02,590 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-07-04 10:06:02,673 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-07-04 10:06:02,705 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-07-04 10:06:02,709 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-07-04 10:06:02,710 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-07-04 10:06:02,713 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-07-04 10:06:02,716 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-07-04 10:06:02,718 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-07-04 10:06:02,722 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-07-04 10:06:07,269 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 10:06:07,274 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 10:06:07,277 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 10:06:07,279 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 10:06:07,280 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 10:06:07,284 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 10:06:07,286 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 10:06:07,290 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 10:06:07,295 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 10:06:08,272 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 10:06:08,275 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 10:06:08,287 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 1
+2017-07-04 10:06:14,538 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 10:06:14,539 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 10:06:14,541 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 10:06:14,542 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 10 
+2017-07-04 10:06:14,544 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 10:06:14,547 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 8
+2017-07-04 10:06:14,549 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 10:06:14,550 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 10:06:14,551 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 10:06:33,384 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.addCourse] ==>  Preparing: insert into course(courseNo,courseName,credits) values (?,?,?) 
+2017-07-04 10:06:33,386 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.addCourse] ==> Parameters: JHG666(String), 思想品德(String), 2.0(Double)
+2017-07-04 10:06:33,565 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.addCourse] <==    Updates: 1
+2017-07-04 10:06:33,599 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 10:06:33,603 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 10:06:33,606 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 10:06:33,609 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 10 
+2017-07-04 10:06:33,610 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 10:06:33,617 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 9
+2017-07-04 10:06:33,619 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 10:06:33,619 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 10:06:33,621 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 10:06:36,307 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 10:06:36,308 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: JHG666(String)
+2017-07-04 10:06:36,311 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 0
+2017-07-04 10:06:38,413 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 10:06:38,415 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 10:06:38,421 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 1
+2017-07-04 10:07:01,275 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.SectionDao.addSection] ==>  Preparing: insert into section(sectionNo,dayOfWeek,timeOfDay,room,seatingCapacity,courseNo) values(?,?,?,?,?,?) 
+2017-07-04 10:07:01,277 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.SectionDao.addSection] ==> Parameters: 15(Integer), 一(String), 3月5日-6月27日(String), 教三A102(String), 20(Integer), CMP283(String)
+2017-07-04 10:07:01,334 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.SectionDao.addSection] <==    Updates: 1
+2017-07-04 10:07:01,355 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 10:07:01,358 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 10:07:01,362 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 10:07:01,364 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 10 
+2017-07-04 10:07:01,365 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 10:07:01,368 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 9
+2017-07-04 10:07:01,370 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 10:07:01,371 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 10:07:01,372 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 10:07:02,965 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 10:07:02,967 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 10:07:02,973 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 2
+2017-07-04 10:08:10,512 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 10:08:10,515 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 10:08:10,519 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 10:08:10,521 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 10:08:10,523 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 10:08:10,526 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 10:08:10,528 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 10:08:10,530 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 10:08:10,534 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 10:08:11,671 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 10:08:11,674 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 10:08:11,676 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 10:08:11,678 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 10:08:11,682 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 10:08:11,684 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 10:08:11,687 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 10:08:11,688 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 10:08:11,690 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 10:08:14,701 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 10:08:14,702 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 10:08:14,706 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 2
+2017-07-04 10:08:27,890 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.SectionDao.addSection] ==>  Preparing: insert into section(sectionNo,dayOfWeek,timeOfDay,room,seatingCapacity,courseNo) values(?,?,?,?,?,?) 
+2017-07-04 10:08:27,892 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.SectionDao.addSection] ==> Parameters: 65(Integer), 一(String), 3月5日-6月2日(String), 教三A102(String), 50(Integer), CMP283(String)
+2017-07-04 10:08:27,956 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.SectionDao.addSection] <==    Updates: 1
+2017-07-04 10:08:27,966 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 10:08:27,969 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 10:08:27,978 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 10:08:39,046 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.SectionDao.resetSection] ==>  Preparing: update section set dayOfWeek=?,timeOfDay=?,seatingCapacity=?,room=? where sectionNo=? 
+2017-07-04 10:08:39,048 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.SectionDao.resetSection] ==> Parameters: 一(String), 3月5日-6月2日(String), 50(Integer), 教三A102(String), 666(Integer)
+2017-07-04 10:08:39,050 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.SectionDao.resetSection] <==    Updates: 0
+2017-07-04 10:08:39,061 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 10:08:39,062 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 10:08:39,064 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 10:08:48,584 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.SectionDao.resetSection] ==>  Preparing: update section set dayOfWeek=?,timeOfDay=?,seatingCapacity=?,room=? where sectionNo=? 
+2017-07-04 10:08:48,586 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.SectionDao.resetSection] ==> Parameters: 一(String), 3月5日-6月2日(String), 50(Integer), 教三A102(String), 666(Integer)
+2017-07-04 10:08:48,589 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.SectionDao.resetSection] <==    Updates: 0
+2017-07-04 10:08:48,601 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 10:08:48,602 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 10:08:48,606 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 10:09:01,545 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.resetSection] ==>  Preparing: update section set dayOfWeek=?,timeOfDay=?,seatingCapacity=?,room=? where sectionNo=? 
+2017-07-04 10:09:01,547 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.resetSection] ==> Parameters: 一(String), 3月5日-6月2日(String), 100(Integer), 教三A105(String), 66(Integer)
+2017-07-04 10:09:01,595 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.resetSection] <==    Updates: 1
+2017-07-04 10:09:01,606 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 10:09:01,606 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 10:09:01,612 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 10:10:11,224 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 10:10:11,225 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 10:10:11,229 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 10:10:14,922 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 10:10:14,922 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 10:10:14,925 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 10:10:37,731 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 10:10:37,732 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 10:10:37,736 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 10:10:37,738 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 10:10:37,739 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 10:10:37,740 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 10:10:37,742 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 10:10:37,743 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 10:10:37,744 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 10:10:37,767 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] ==>  Preparing: select * from section as s inner join (select * from transcript where studentId=?) as t on t.sectionNo =s.sectionNo left join course on s.courseNo=course.courseNo 
+2017-07-04 10:10:37,768 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] ==> Parameters: 09143602(String)
+2017-07-04 10:10:37,774 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] <==      Total: 2
+2017-07-04 10:10:42,129 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 10:10:42,130 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 10:10:42,132 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 10:10:42,133 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 10:10:42,134 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 10:10:42,136 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 10:10:42,137 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 10:10:42,138 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 10:10:42,139 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 10:10:43,602 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 10:10:43,602 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 10:10:43,605 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 10:11:48,407 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 10:11:48,408 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 10:11:48,411 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 10:13:07,708 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 10:13:07,710 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 10:13:07,714 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 10:13:09,251 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 10:13:09,252 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP999(String)
+2017-07-04 10:13:09,253 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 0
+2017-07-04 10:13:10,877 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 10:13:10,878 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: ART101(String)
+2017-07-04 10:13:10,879 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 0
+2017-07-04 10:13:14,527 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 10:13:14,529 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 10:13:14,531 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 10:13:14,532 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 10 
+2017-07-04 10:13:14,533 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 10:13:14,536 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 9
+2017-07-04 10:13:14,537 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 10:13:14,538 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 10:13:14,539 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 10:13:16,134 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 10:13:16,134 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: SAD456(String)
+2017-07-04 10:13:16,136 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 0
+2017-07-04 10:13:17,791 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 10:13:17,792 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: ASD123(String)
+2017-07-04 10:13:17,795 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 2
+2017-07-04 10:17:23,410 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 10:17:23,411 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 10:17:23,414 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 14:50:23,189 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 14:50:23,225 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143600(String)
+2017-07-04 14:50:23,251 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 0
+2017-07-04 14:50:32,964 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-07-04 14:50:32,966 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-07-04 14:50:32,971 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-07-04 14:50:32,973 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-07-04 14:50:32,974 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-07-04 14:50:32,977 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-07-04 14:50:32,979 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-07-04 14:50:32,980 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-07-04 14:50:32,983 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-07-04 14:50:35,358 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 14:50:35,359 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 14:50:35,362 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 14:50:35,364 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 14:50:35,366 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 14:50:35,368 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 14:50:35,369 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 14:50:35,370 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 14:50:35,372 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 14:50:36,820 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 14:50:36,822 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 14:50:36,830 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 14:50:38,246 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 14:50:38,248 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP999(String)
+2017-07-04 14:50:38,250 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 0
+2017-07-04 14:50:39,984 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 14:50:39,985 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: ART101(String)
+2017-07-04 14:50:39,987 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 0
+2017-07-04 14:50:42,149 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 14:50:42,151 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 14:50:42,153 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 14:50:42,154 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 10 
+2017-07-04 14:50:42,155 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 14:50:42,158 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 9
+2017-07-04 14:50:42,159 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 14:50:42,160 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 14:50:42,162 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 14:51:08,083 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 14:51:08,085 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 14:51:08,096 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 14:51:14,175 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 14:51:14,177 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP999(String)
+2017-07-04 14:51:14,179 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 0
+2017-07-04 14:51:14,849 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 14:51:14,851 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: MNJ588(String)
+2017-07-04 14:51:14,855 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 0
+2017-07-04 14:51:16,536 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 14:51:16,538 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: ART101(String)
+2017-07-04 14:51:16,541 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 0
+2017-07-04 14:51:20,590 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 14:51:20,592 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 14:51:20,596 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 14:51:22,272 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 14:51:22,273 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP999(String)
+2017-07-04 14:51:22,275 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 0
+2017-07-04 14:51:27,855 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 14:51:27,856 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: ART101(String)
+2017-07-04 14:51:27,858 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 0
+2017-07-04 14:51:30,352 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 14:51:30,353 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 14:51:30,356 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 14:51:32,991 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 14:51:32,993 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP999(String)
+2017-07-04 14:51:32,995 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 0
+2017-07-04 14:51:38,679 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 14:51:38,680 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 14:51:38,683 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 14:51:42,901 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 14:51:42,903 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP999(String)
+2017-07-04 14:51:42,907 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 0
+2017-07-04 14:51:56,105 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.findSectionByProfessorId] ==>  Preparing: select * from course as c inner join (select * from section where professorId=?) as s on c.courseNo=s.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 14:51:56,107 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.findSectionByProfessorId] ==> Parameters: 09143600(String)
+2017-07-04 14:51:56,113 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.findSectionByProfessorId] <==      Total: 4
+2017-07-04 14:51:57,131 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.findStudentBySectionNo] ==>  Preparing: select * from transcript as t inner join (select * from section where sectionNo=?) as s on t.sectionNo =s.sectionNo left join students on t.studentId=students.id 
+2017-07-04 14:51:57,132 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.findStudentBySectionNo] ==> Parameters: 33(String)
+2017-07-04 14:51:57,134 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.findStudentBySectionNo] <==      Total: 0
+2017-07-04 14:51:58,550 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.SectionDao.findStudentBySectionNo] ==>  Preparing: select * from transcript as t inner join (select * from section where sectionNo=?) as s on t.sectionNo =s.sectionNo left join students on t.studentId=students.id 
+2017-07-04 14:51:58,551 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.SectionDao.findStudentBySectionNo] ==> Parameters: 3(String)
+2017-07-04 14:51:58,553 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.SectionDao.findStudentBySectionNo] <==      Total: 1
+2017-07-04 14:52:14,953 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 14:52:14,954 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 14:52:14,956 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 14:52:14,958 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 14:52:14,958 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 14:52:14,963 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 14:52:14,965 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 14:52:14,966 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 14:52:14,979 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 14:52:14,992 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] ==>  Preparing: select * from section as s inner join (select * from transcript where studentId=?) as t on t.sectionNo =s.sectionNo left join course on s.courseNo=course.courseNo 
+2017-07-04 14:52:14,993 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] ==> Parameters: 09143602(String)
+2017-07-04 14:52:15,001 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] <==      Total: 2
+2017-07-04 14:52:16,701 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 14:52:16,702 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 14:52:16,704 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 14:52:16,706 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 14:52:16,708 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 14:52:16,709 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 14:52:16,710 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 14:52:16,711 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 14:52:16,712 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 14:52:18,410 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 14:52:18,410 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 14:52:18,417 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 15:10:37,155 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:10:37,159 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:10:37,162 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:10:37,162 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:10:37,163 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:10:37,165 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:10:37,166 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:10:37,167 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:10:37,168 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:10:38,356 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 15:10:38,357 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 15:10:38,361 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 15:13:14,911 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 15:13:14,967 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 15:13:15,004 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 15:13:15,008 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 15:13:15,009 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 15:13:15,017 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 15:13:15,020 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 15:13:15,023 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 15:13:15,027 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 15:13:15,114 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] ==>  Preparing: select * from section as s inner join (select * from transcript where studentId=?) as t on t.sectionNo =s.sectionNo left join course on s.courseNo=course.courseNo 
+2017-07-04 15:13:15,120 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] ==> Parameters: 09143602(String)
+2017-07-04 15:13:15,127 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] <==      Total: 2
+2017-07-04 15:13:18,168 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:13:18,169 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:13:18,174 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:13:18,176 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:13:18,179 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:13:18,181 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:13:18,183 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:13:18,184 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:13:18,187 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:13:20,085 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 15:13:20,087 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 15:13:20,093 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 15:15:14,576 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 15:15:14,577 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 15:15:14,581 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 15:19:28,164 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 15:19:28,166 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 15:19:28,172 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 15:19:28,173 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 15:19:28,174 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 15:19:28,176 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 15:19:28,177 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 15:19:28,178 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 15:19:28,180 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 15:19:28,191 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] ==>  Preparing: select * from section as s inner join (select * from transcript where studentId=?) as t on t.sectionNo =s.sectionNo left join course on s.courseNo=course.courseNo 
+2017-07-04 15:19:28,193 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] ==> Parameters: 09143602(String)
+2017-07-04 15:19:28,197 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] <==      Total: 2
+2017-07-04 15:20:10,542 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:20:10,544 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:20:10,547 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:20:10,548 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:20:10,551 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:20:10,564 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:20:10,569 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:20:10,571 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:20:10,575 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:20:11,018 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:20:11,019 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:20:11,021 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:20:11,023 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:20:11,024 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:20:11,026 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:20:11,027 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:20:11,028 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:20:11,035 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:20:13,781 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 15:20:13,782 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 15:20:13,785 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 15:23:03,681 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:23:03,683 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:23:03,685 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:23:03,686 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:23:03,687 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:23:03,689 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:23:03,690 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:23:03,691 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:23:03,692 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:23:04,552 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:23:04,553 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:23:04,555 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:23:04,557 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:23:04,558 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:23:04,560 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:23:04,561 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:23:04,562 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:23:04,563 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:23:05,491 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:23:05,493 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:23:05,495 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:23:05,496 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:23:05,496 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:23:05,499 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:23:05,500 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:23:05,501 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:23:05,502 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:23:06,042 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:23:06,044 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:23:06,046 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:23:06,047 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:23:06,048 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:23:06,050 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:23:06,051 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:23:06,052 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:23:06,059 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:23:06,859 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 15:23:06,860 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 15:23:06,865 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 15:24:35,705 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:24:35,706 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:35,708 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:24:35,711 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:24:35,712 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:35,715 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:24:35,716 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:24:35,717 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:24:35,719 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:24:36,305 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:24:36,306 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:36,307 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:24:36,308 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:24:36,309 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:36,311 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:24:36,312 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:24:36,312 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:24:36,315 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:24:36,761 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:24:36,762 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:36,765 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:24:36,766 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:24:36,767 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:36,771 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:24:36,773 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:24:36,774 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:24:36,776 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:24:36,945 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:24:36,948 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:36,950 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:24:36,951 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:24:36,953 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:36,956 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:24:36,958 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:24:36,958 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:24:36,960 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:24:37,123 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:24:37,125 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:37,126 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:24:37,127 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:24:37,128 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:37,130 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:24:37,131 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:24:37,132 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:24:37,133 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:24:37,312 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:24:37,314 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:37,316 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:24:37,317 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:24:37,318 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:37,320 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:24:37,321 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:24:37,321 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:24:37,323 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:24:37,587 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:24:37,588 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:37,589 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:24:37,590 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:24:37,591 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:37,593 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:24:37,594 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:24:37,596 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:24:37,598 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:24:37,878 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:24:37,881 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:37,883 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:24:37,883 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:24:37,884 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:37,886 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:24:37,892 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:24:37,893 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:24:37,895 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:24:38,072 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:24:38,073 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:38,075 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:24:38,076 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:24:38,076 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:38,079 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:24:38,080 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:24:38,080 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:24:38,082 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:24:38,261 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:24:38,266 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:38,268 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:24:38,269 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:24:38,270 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:38,272 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:24:38,274 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:24:38,275 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:24:38,277 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:24:38,490 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:24:38,491 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:38,493 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:24:38,494 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:24:38,494 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:38,500 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:24:38,501 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:24:38,501 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:24:38,503 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:24:38,674 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:24:38,675 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:38,676 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:24:38,677 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:24:38,678 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:38,681 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:24:38,682 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:24:38,683 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:24:38,684 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:24:38,908 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:24:38,909 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:38,911 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:24:38,912 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:24:38,913 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:38,915 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:24:38,917 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:24:38,918 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:24:38,919 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:24:39,141 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:24:39,142 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:39,144 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:24:39,145 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:24:39,145 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:39,148 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:24:39,149 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:24:39,150 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:24:39,151 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:24:39,938 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:24:39,940 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:39,942 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:24:39,942 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:24:39,943 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:39,945 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:24:39,946 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:24:39,947 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:24:39,948 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:24:40,448 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:24:40,450 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:40,451 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:24:40,452 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:24:40,453 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:24:40,454 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:24:40,456 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:24:40,457 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:24:40,458 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:24:41,365 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 15:24:41,365 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 15:24:41,368 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 15:43:05,481 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 15:43:05,510 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 15:43:05,522 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 15:43:05,525 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 15:43:05,525 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 15:43:05,528 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 15:43:05,529 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 15:43:05,529 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 15:43:05,531 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 15:43:05,559 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] ==>  Preparing: select * from section as s inner join (select * from transcript where studentId=?) as t on t.sectionNo =s.sectionNo left join course on s.courseNo=course.courseNo 
+2017-07-04 15:43:05,561 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] ==> Parameters: 09143602(String)
+2017-07-04 15:43:05,566 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] <==      Total: 2
+2017-07-04 15:43:08,577 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:43:08,578 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:43:08,580 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:43:08,583 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:43:08,584 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:43:08,586 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:43:08,588 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:43:08,589 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:43:08,590 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:43:09,687 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 15:43:09,688 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 15:43:09,692 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 15:46:23,712 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:46:23,713 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:46:23,715 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:46:23,718 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:46:23,721 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:46:23,723 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:46:23,724 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:46:23,725 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:46:23,727 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:46:25,053 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 15:46:25,054 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 15:46:25,058 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 15:47:37,949 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:47:37,950 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:47:37,953 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:47:37,954 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:47:37,956 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:47:37,959 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:47:37,962 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:47:37,963 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:47:37,964 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:47:38,634 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:47:38,635 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:47:38,637 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:47:38,637 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:47:38,638 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:47:38,640 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:47:38,642 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:47:38,643 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:47:38,646 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:47:39,804 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 15:47:39,805 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 15:47:39,808 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 15:49:06,881 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 15:49:06,883 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:49:06,886 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 15:49:06,889 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 15:49:06,890 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 15:49:06,892 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 15:49:06,894 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 15:49:06,895 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 15:49:06,896 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 15:49:08,378 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 15:49:08,379 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 15:49:08,382 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 16:33:40,308 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 16:33:40,340 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 16:33:40,356 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 16:33:40,359 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 16:33:40,361 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 16:33:40,364 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 16:33:40,367 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 16:33:40,368 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 16:33:40,374 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 16:33:40,408 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] ==>  Preparing: select * from section as s inner join (select * from transcript where studentId=?) as t on t.sectionNo =s.sectionNo left join course on s.courseNo=course.courseNo 
+2017-07-04 16:33:40,411 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] ==> Parameters: 09143602(String)
+2017-07-04 16:33:40,417 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] <==      Total: 2
+2017-07-04 16:33:42,546 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 16:33:42,548 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 16:33:42,551 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 16:33:42,555 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 16:33:42,557 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 16:33:42,561 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 16:33:42,564 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 16:33:42,565 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 16:33:42,569 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 16:33:43,360 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 16:33:43,361 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 16:33:43,364 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 16:35:27,431 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 16:35:27,432 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 16:35:27,434 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 16:35:27,436 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 16:35:27,436 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 16:35:27,438 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 16:35:27,440 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 16:35:27,441 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 16:35:27,443 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 16:35:27,453 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] ==>  Preparing: select * from section as s inner join (select * from transcript where studentId=?) as t on t.sectionNo =s.sectionNo left join course on s.courseNo=course.courseNo 
+2017-07-04 16:35:27,455 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] ==> Parameters: 09143602(String)
+2017-07-04 16:35:27,459 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] <==      Total: 2
+2017-07-04 16:36:24,802 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 16:36:24,803 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 16:36:24,806 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 16:36:24,807 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 16:36:24,808 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 16:36:24,811 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 16:36:24,813 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 16:36:24,815 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 16:36:24,817 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 16:36:25,394 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 16:36:25,396 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 16:36:25,399 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 16:36:25,400 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 16:36:25,401 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 16:36:25,405 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 16:36:25,406 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 16:36:25,408 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 16:36:25,409 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 16:36:25,856 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 16:36:25,857 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 16:36:25,859 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 16:36:25,860 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 16:36:25,861 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 16:36:25,864 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 16:36:25,867 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 16:36:25,867 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 16:36:25,869 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 16:36:26,628 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 16:36:26,629 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 16:36:26,631 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 16:36:26,632 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 16:36:26,633 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 16:36:26,635 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 16:36:26,636 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 16:36:26,637 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 16:36:26,638 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 16:36:27,459 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 16:36:27,460 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 16:36:27,463 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 16:36:44,756 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 16:36:44,757 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 16:36:44,759 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 16:36:44,760 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 16:36:44,761 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 16:36:44,763 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 16:36:44,765 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 16:36:44,765 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 16:36:44,768 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 16:36:46,074 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 16:36:46,076 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 16:36:46,078 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 16:44:58,850 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 16:44:58,851 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 16:44:58,853 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 16:44:58,854 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 16:44:58,855 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 16:44:58,857 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 16:44:58,858 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 16:44:58,859 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 16:44:58,860 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 16:44:59,406 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 16:44:59,407 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 16:44:59,408 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 16:44:59,410 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 16:44:59,411 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 16:44:59,413 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 16:44:59,415 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 16:44:59,415 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 16:44:59,417 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 16:45:00,034 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 16:45:00,035 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 16:45:00,037 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 16:45:00,038 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 16:45:00,040 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 16:45:00,042 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 16:45:00,043 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 16:45:00,043 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 16:45:00,045 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 16:45:00,732 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 16:45:00,733 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 16:45:00,737 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 16:55:44,226 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 16:55:44,254 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 16:55:44,268 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 16:55:44,271 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 16:55:44,272 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 16:55:44,274 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 16:55:44,275 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 16:55:44,276 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 16:55:44,278 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 16:55:44,309 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] ==>  Preparing: select * from section as s inner join (select * from transcript where studentId=?) as t on t.sectionNo =s.sectionNo left join course on s.courseNo=course.courseNo 
+2017-07-04 16:55:44,312 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] ==> Parameters: 09143602(String)
+2017-07-04 16:55:44,316 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] <==      Total: 2
+2017-07-04 16:55:45,950 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 16:55:45,951 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 16:55:45,953 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 16:55:45,955 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 16:55:45,955 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 16:55:45,957 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 16:55:45,958 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 16:55:45,959 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 16:55:45,961 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 16:55:46,942 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 16:55:46,943 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 16:55:46,948 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 16:58:11,282 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 16:58:11,314 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 16:58:11,332 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 16:58:11,335 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 16:58:11,336 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 16:58:11,338 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 16:58:11,340 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 16:58:11,341 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 16:58:11,346 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 16:58:11,388 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] ==>  Preparing: select * from section as s inner join (select * from transcript where studentId=?) as t on t.sectionNo =s.sectionNo left join course on s.courseNo=course.courseNo 
+2017-07-04 16:58:11,390 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] ==> Parameters: 09143602(String)
+2017-07-04 16:58:11,393 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] <==      Total: 2
+2017-07-04 16:58:13,125 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 16:58:13,132 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 16:58:13,134 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 16:58:13,137 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 16:58:13,137 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 16:58:13,140 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 16:58:13,141 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 16:58:13,142 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 16:58:13,145 http-nio-8070-exec-5 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 16:58:14,319 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 16:58:14,320 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 16:58:14,323 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 16:58:32,027 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 16:58:32,028 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 16:58:32,030 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 16:58:32,031 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 16:58:32,033 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 16:58:32,035 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 16:58:32,036 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 16:58:32,037 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 16:58:32,039 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 16:58:32,624 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 16:58:32,625 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 16:58:32,627 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 16:58:32,628 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 16:58:32,628 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 16:58:32,630 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 16:58:32,631 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 16:58:32,634 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 16:58:32,636 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 16:58:32,798 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 16:58:32,801 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 16:58:32,802 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 16:58:32,803 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 16:58:32,805 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 16:58:32,809 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 16:58:32,810 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 16:58:32,810 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 16:58:32,812 http-nio-8070-exec-1 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 16:58:34,667 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 16:58:34,668 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 16:58:34,672 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 17:06:16,720 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 17:06:16,751 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 17:06:16,772 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 17:06:16,775 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 17:06:16,775 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 17:06:16,778 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 17:06:16,779 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==>  Preparing: select * from students where id=? 
+2017-07-04 17:06:16,780 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.StudentsDao.queryById] ==> Parameters: 09143602(String)
+2017-07-04 17:06:16,781 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.StudentsDao.queryById] <==      Total: 1
+2017-07-04 17:06:16,812 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] ==>  Preparing: select * from section as s inner join (select * from transcript where studentId=?) as t on t.sectionNo =s.sectionNo left join course on s.courseNo=course.courseNo 
+2017-07-04 17:06:16,815 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] ==> Parameters: 09143602(String)
+2017-07-04 17:06:16,820 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.SectionDao.findSectionByStudent] <==      Total: 2
+2017-07-04 17:07:41,125 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 17:07:41,125 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 17:07:41,126 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 17:07:41,126 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 17:07:41,126 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 17:07:41,130 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:07:41,129 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:07:41,129 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:07:41,127 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:07:41,135 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 17:07:41,136 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 17:07:41,137 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 17:07:41,138 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:07:41,135 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 17:07:41,134 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 17:07:41,140 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 17:07:41,131 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:07:41,141 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:07:41,141 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 17:07:41,140 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 17:07:41,145 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 17:07:41,139 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 17:07:41,147 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 17:07:41,146 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 17:07:41,144 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:07:41,144 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 17:07:41,150 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 17:07:41,148 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:07:41,148 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 17:07:41,153 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 17:07:41,154 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 17:07:41,155 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 17:07:41,153 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 17:07:41,152 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 17:07:41,161 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 17:07:41,162 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 17:07:41,163 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 17:07:41,159 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 17:07:41,168 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 17:07:41,170 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:07:41,170 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 17:07:41,179 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 17:07:41,181 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 17:07:41,182 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 17:07:41,183 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 17:07:41,285 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 17:07:41,286 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:07:41,287 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 17:07:41,288 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 17:07:41,289 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:07:41,291 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 17:07:41,294 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 17:07:41,294 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 17:07:41,298 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 17:07:41,551 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 17:07:41,552 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:07:41,554 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 17:07:41,554 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 17:07:41,555 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:07:41,558 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 17:07:41,559 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 17:07:41,561 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 17:07:41,562 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 17:07:43,394 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 17:07:43,395 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:07:43,396 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 17:07:43,397 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 10 
+2017-07-04 17:07:43,399 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:07:43,402 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 9
+2017-07-04 17:07:43,403 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 17:07:43,404 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 17:07:43,406 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 17:08:31,553 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 17:08:31,554 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 17:08:31,559 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 17:09:51,887 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 17:09:51,888 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:09:51,890 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 17:09:51,892 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 17:09:51,893 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:09:51,895 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 17:09:51,897 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 17:09:51,897 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 17:09:51,899 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 17:09:52,516 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 17:09:52,519 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:09:52,522 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 17:09:52,523 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 17:09:52,525 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:09:52,526 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 17:09:52,527 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 17:09:52,528 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 17:09:52,529 http-nio-8070-exec-9 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 17:09:55,380 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 17:09:55,381 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:09:55,384 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 17:09:55,385 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 10 
+2017-07-04 17:09:55,386 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:09:55,389 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 9
+2017-07-04 17:09:55,390 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 17:09:55,392 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 17:09:55,394 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 17:09:57,628 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 17:09:57,630 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 17:09:57,633 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 17:12:31,071 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-07-04 17:12:31,073 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143602(String)
+2017-07-04 17:12:31,076 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 0
+2017-07-04 17:12:35,541 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-07-04 17:12:35,542 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-07-04 17:12:35,544 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-07-04 17:12:35,544 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-07-04 17:12:35,545 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-07-04 17:12:35,546 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-07-04 17:12:35,548 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-07-04 17:12:35,548 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-07-04 17:12:35,550 http-nio-8070-exec-6 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-07-04 17:12:40,146 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 17:12:40,147 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:12:40,149 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 17:12:40,149 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 17:12:40,150 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:12:40,152 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 17:12:40,153 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 17:12:40,154 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 17:12:40,155 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 17:12:44,248 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 17:12:44,249 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:12:44,251 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 17:12:44,251 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 17:12:44,252 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:12:44,259 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 17:12:44,260 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 17:12:44,261 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 17:12:44,262 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 17:12:51,447 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 17:12:51,448 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:12:51,449 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 17:12:51,450 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 17:12:51,451 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:12:51,452 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 17:12:51,453 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 17:12:51,455 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 17:12:51,456 http-nio-8070-exec-10 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 17:13:35,361 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 17:13:35,363 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:13:35,364 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 17:13:35,365 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 10 
+2017-07-04 17:13:35,366 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 17:13:35,368 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 9
+2017-07-04 17:13:35,370 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 17:13:35,370 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 17:13:35,371 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 17:13:37,367 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==>  Preparing: select * from section as s inner join (select * from course where courseNo=?) as c on s.courseNo=c.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 17:13:37,368 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] ==> Parameters: CMP283(String)
+2017-07-04 17:13:37,371 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.SectionDao.getSectionByCourseNo] <==      Total: 3
+2017-07-04 17:16:41,598 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.SectionDao.findSectionByProfessorId] ==>  Preparing: select * from course as c inner join (select * from section where professorId=?) as s on c.courseNo=s.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 17:16:41,599 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.SectionDao.findSectionByProfessorId] ==> Parameters: 09143600(String)
+2017-07-04 17:16:41,610 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.SectionDao.findSectionByProfessorId] <==      Total: 7
+2017-07-04 17:16:42,948 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.SectionDao.findStudentBySectionNo] ==>  Preparing: select * from transcript as t inner join (select * from section where sectionNo=?) as s on t.sectionNo =s.sectionNo left join students on t.studentId=students.id 
+2017-07-04 17:16:42,949 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.SectionDao.findStudentBySectionNo] ==> Parameters: 66(String)
+2017-07-04 17:16:42,950 http-nio-8070-exec-2 DEBUG [com.github.zjh.dao.SectionDao.findStudentBySectionNo] <==      Total: 0
+2017-07-04 17:16:44,034 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.findStudentBySectionNo] ==>  Preparing: select * from transcript as t inner join (select * from section where sectionNo=?) as s on t.sectionNo =s.sectionNo left join students on t.studentId=students.id 
+2017-07-04 17:16:44,035 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.findStudentBySectionNo] ==> Parameters: 15(String)
+2017-07-04 17:16:44,037 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.findStudentBySectionNo] <==      Total: 0
+2017-07-04 17:16:46,864 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.SectionDao.findStudentBySectionNo] ==>  Preparing: select * from transcript as t inner join (select * from section where sectionNo=?) as s on t.sectionNo =s.sectionNo left join students on t.studentId=students.id 
+2017-07-04 17:16:46,865 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.SectionDao.findStudentBySectionNo] ==> Parameters: 3(String)
+2017-07-04 17:16:46,867 http-nio-8070-exec-4 DEBUG [com.github.zjh.dao.SectionDao.findStudentBySectionNo] <==      Total: 1
+2017-07-04 20:12:31,994 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-07-04 20:12:32,071 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143602(String)
+2017-07-04 20:12:32,102 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 0
+2017-07-04 20:12:33,813 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-07-04 20:12:33,815 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-07-04 20:12:33,820 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-07-04 20:12:33,822 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-07-04 20:12:33,823 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-07-04 20:12:33,825 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-07-04 20:12:33,827 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==>  Preparing: select * from professor where id=? 
+2017-07-04 20:12:33,828 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] ==> Parameters: 09143600(String)
+2017-07-04 20:12:33,832 http-nio-8070-exec-8 DEBUG [com.github.zjh.dao.ProfessorDao.findProfessorById] <==      Total: 1
+2017-07-04 20:12:36,899 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==>  Preparing: SELECT count(0) FROM course WHERE credits LIKE ? OR courseNo LIKE ? OR courseName LIKE ? 
+2017-07-04 20:12:36,905 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 20:12:36,911 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse_COUNT] <==      Total: 1
+2017-07-04 20:12:36,913 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==>  Preparing: select * from course where credits like ? or courseNo like ? or courseName like ? LIMIT 3 
+2017-07-04 20:12:36,919 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] ==> Parameters: %%(String), %%(String), %%(String)
+2017-07-04 20:12:36,924 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.fuzzyFindCourse] <==      Total: 3
+2017-07-04 20:12:36,925 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==>  Preparing: select count(*) from course 
+2017-07-04 20:12:36,926 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.getTotal] ==> Parameters: 
+2017-07-04 20:12:36,931 http-nio-8070-exec-3 DEBUG [com.github.zjh.dao.CourseDao.getTotal] <==      Total: 1
+2017-07-04 20:12:37,462 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.findSectionByProfessorId] ==>  Preparing: select * from course as c inner join (select * from section where professorId=?) as s on c.courseNo=s.courseNo left join professor as p on s.professorId=p.id 
+2017-07-04 20:12:37,463 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.findSectionByProfessorId] ==> Parameters: 09143600(String)
+2017-07-04 20:12:37,471 http-nio-8070-exec-7 DEBUG [com.github.zjh.dao.SectionDao.findSectionByProfessorId] <==      Total: 7

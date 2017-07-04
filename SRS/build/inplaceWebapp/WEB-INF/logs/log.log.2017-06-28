@@ -1,0 +1,1133 @@
+11:09:28,879 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+11:09:28,907 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+11:09:28,923 DEBUG findProfessorById:145 : <==      Total: 1
+11:09:28,926 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+11:09:28,926 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+11:09:28,929 DEBUG findProfessorById:145 : <==      Total: 1
+11:09:28,953 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+11:09:28,954 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+11:09:28,955 DEBUG findProfessorById:145 : <==      Total: 1
+12:36:31,669 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+12:36:31,758 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+12:36:31,789 DEBUG findProfessorById:145 : <==      Total: 1
+12:36:31,793 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+12:36:31,795 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+12:36:31,798 DEBUG findProfessorById:145 : <==      Total: 1
+12:36:31,801 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+12:36:31,802 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+12:36:31,806 DEBUG findProfessorById:145 : <==      Total: 1
+12:36:35,573 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+12:36:35,576 DEBUG findAllCourse:145 : ==> Parameters: 
+12:36:43,230 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+12:36:43,232 DEBUG findAllCourse:145 : ==> Parameters: 
+12:37:51,577 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+12:37:51,605 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+12:37:51,618 DEBUG findProfessorById:145 : <==      Total: 1
+12:37:51,622 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+12:37:51,622 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+12:37:51,624 DEBUG findProfessorById:145 : <==      Total: 1
+12:37:51,626 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+12:37:51,627 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+12:37:51,629 DEBUG findProfessorById:145 : <==      Total: 1
+12:39:11,460 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+12:39:11,486 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+12:39:11,503 DEBUG findProfessorById:145 : <==      Total: 1
+12:39:11,505 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+12:39:11,506 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+12:39:11,508 DEBUG findProfessorById:145 : <==      Total: 1
+12:39:11,511 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+12:39:11,512 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+12:39:11,513 DEBUG findProfessorById:145 : <==      Total: 1
+12:39:12,948 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+12:39:12,949 DEBUG findAllCourse:145 : ==> Parameters: 
+12:39:14,217 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+12:39:14,218 DEBUG findAllCourse:145 : ==> Parameters: 
+12:39:14,823 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+12:39:14,823 DEBUG findAllCourse:145 : ==> Parameters: 
+12:39:15,404 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+12:39:15,405 DEBUG findAllCourse:145 : ==> Parameters: 
+12:39:21,417 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+12:39:21,418 DEBUG findAllCourse:145 : ==> Parameters: 
+12:40:40,759 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+12:40:40,760 DEBUG findAllCourse:145 : ==> Parameters: 
+12:40:46,791 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+12:40:46,792 DEBUG findAllCourse:145 : ==> Parameters: 
+12:41:53,366 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+12:41:53,367 DEBUG findAllCourse:145 : ==> Parameters: 
+12:41:54,095 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+12:41:54,096 DEBUG findAllCourse:145 : ==> Parameters: 
+12:41:54,321 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+12:41:54,322 DEBUG findAllCourse:145 : ==> Parameters: 
+12:43:50,057 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+12:43:50,104 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+12:43:50,127 DEBUG findProfessorById:145 : <==      Total: 1
+12:43:50,130 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+12:43:50,131 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+12:43:50,133 DEBUG findProfessorById:145 : <==      Total: 1
+12:43:50,135 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+12:43:50,136 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+12:43:50,138 DEBUG findProfessorById:145 : <==      Total: 1
+12:43:51,623 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+12:43:51,626 DEBUG findAllCourse:145 : ==> Parameters: 
+13:07:46,132 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+13:07:46,156 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+13:07:46,171 DEBUG findProfessorById:145 : <==      Total: 1
+13:07:46,174 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+13:07:46,174 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+13:07:46,177 DEBUG findProfessorById:145 : <==      Total: 1
+13:07:46,179 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+13:07:46,179 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+13:07:46,181 DEBUG findProfessorById:145 : <==      Total: 1
+13:07:47,954 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+13:07:47,956 DEBUG findAllCourse:145 : ==> Parameters: 
+13:07:47,960 DEBUG findAllCourse:145 : <==      Total: 5
+13:49:25,185 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+13:49:25,187 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+13:49:25,189 DEBUG findProfessorById:145 : <==      Total: 1
+13:49:25,191 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+13:49:25,192 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+13:49:25,194 DEBUG findProfessorById:145 : <==      Total: 1
+13:49:25,198 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+13:49:25,199 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+13:49:25,205 DEBUG findProfessorById:145 : <==      Total: 1
+13:49:27,545 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+13:49:27,546 DEBUG findAllCourse:145 : ==> Parameters: 
+13:49:27,549 DEBUG findAllCourse:145 : <==      Total: 5
+14:24:29,824 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+14:24:29,826 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+14:24:29,829 DEBUG findProfessorById:145 : <==      Total: 1
+14:24:29,832 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+14:24:29,833 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+14:24:29,835 DEBUG findProfessorById:145 : <==      Total: 1
+14:24:29,838 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+14:24:29,839 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+14:24:29,842 DEBUG findProfessorById:145 : <==      Total: 1
+14:24:32,427 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+14:24:32,429 DEBUG findAllCourse:145 : ==> Parameters: 
+14:24:32,435 DEBUG findAllCourse:145 : <==      Total: 5
+14:39:20,554 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+14:39:20,555 DEBUG findAllCourse:145 : ==> Parameters: 
+14:39:20,565 DEBUG findAllCourse:145 : <==      Total: 5
+14:39:21,171 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+14:39:21,173 DEBUG findAllCourse:145 : ==> Parameters: 
+14:39:21,175 DEBUG findAllCourse:145 : <==      Total: 5
+15:03:22,377 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+15:03:22,379 DEBUG findAllCourse:145 : ==> Parameters: 
+15:03:22,386 DEBUG findAllCourse:145 : <==      Total: 5
+15:04:13,253 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+15:04:13,255 DEBUG findAllCourse:145 : ==> Parameters: 
+15:04:13,257 DEBUG findAllCourse:145 : <==      Total: 5
+15:04:14,293 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+15:04:14,295 DEBUG findAllCourse:145 : ==> Parameters: 
+15:04:14,298 DEBUG findAllCourse:145 : <==      Total: 5
+15:04:19,081 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+15:04:19,082 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+15:04:19,086 DEBUG findProfessorById:145 : <==      Total: 1
+15:04:19,089 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+15:04:19,090 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+15:04:19,092 DEBUG findProfessorById:145 : <==      Total: 1
+15:04:19,095 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+15:04:19,097 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+15:04:19,099 DEBUG findProfessorById:145 : <==      Total: 1
+15:04:21,671 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+15:04:21,674 DEBUG findAllCourse:145 : ==> Parameters: 
+15:04:21,680 DEBUG findAllCourse:145 : <==      Total: 5
+15:07:01,647 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+15:07:01,654 DEBUG findAllCourse:145 : ==> Parameters: 
+15:07:01,657 DEBUG findAllCourse:145 : <==      Total: 5
+15:07:02,983 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+15:07:02,987 DEBUG findAllCourse:145 : ==> Parameters: 
+15:07:02,989 DEBUG findAllCourse:145 : <==      Total: 5
+15:12:28,197 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+15:12:28,198 DEBUG findAllCourse:145 : ==> Parameters: 
+15:12:28,200 DEBUG findAllCourse:145 : <==      Total: 5
+15:18:18,642 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+15:18:18,643 DEBUG findAllCourse:145 : ==> Parameters: 
+15:18:18,647 DEBUG findAllCourse:145 : <==      Total: 5
+15:18:19,716 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+15:18:19,717 DEBUG findAllCourse:145 : ==> Parameters: 
+15:18:19,720 DEBUG findAllCourse:145 : <==      Total: 5
+15:18:20,485 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+15:18:20,486 DEBUG findAllCourse:145 : ==> Parameters: 
+15:18:20,489 DEBUG findAllCourse:145 : <==      Total: 5
+15:18:21,496 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+15:18:21,497 DEBUG findAllCourse:145 : ==> Parameters: 
+15:18:21,499 DEBUG findAllCourse:145 : <==      Total: 5
+15:18:22,495 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+15:18:22,495 DEBUG findAllCourse:145 : ==> Parameters: 
+15:18:22,497 DEBUG findAllCourse:145 : <==      Total: 5
+15:18:34,613 DEBUG addCourse:145 : ==>  Preparing: insert into course (courseNo,courseName,credits) values (?,?,?) 
+15:18:34,616 DEBUG addCourse:145 : ==> Parameters: 12(String), 12(String), 12.0(Double)
+15:19:25,999 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+15:19:25,999 DEBUG findAllCourse:145 : ==> Parameters: 
+15:19:26,002 DEBUG findAllCourse:145 : <==      Total: 5
+15:19:29,517 DEBUG addCourse:145 : ==>  Preparing: insert into course (courseNo,courseName,credits) values (?,?,?) 
+15:19:29,518 DEBUG addCourse:145 : ==> Parameters: 12(String), 12(String), 12.0(Double)
+15:20:27,757 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+15:20:27,807 DEBUG findAllCourse:145 : ==> Parameters: 
+15:20:27,834 DEBUG findAllCourse:145 : <==      Total: 5
+15:20:34,203 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+15:20:34,206 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+15:20:34,211 DEBUG findProfessorById:145 : <==      Total: 1
+15:20:34,214 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+15:20:34,215 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+15:20:34,217 DEBUG findProfessorById:145 : <==      Total: 1
+15:20:34,220 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+15:20:34,221 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+15:20:34,223 DEBUG findProfessorById:145 : <==      Total: 1
+15:20:37,575 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+15:20:37,578 DEBUG findAllCourse:145 : ==> Parameters: 
+15:20:37,584 DEBUG findAllCourse:145 : <==      Total: 5
+15:27:42,785 DEBUG addCourse:145 : ==>  Preparing: insert into course (courseNo,courseName,credits) values (?,?,?) 
+15:27:42,838 DEBUG addCourse:145 : ==> Parameters: 12(String), 12(String), 12.0(Double)
+15:30:20,900 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+15:30:20,912 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+15:30:20,937 DEBUG findProfessorById:145 : <==      Total: 1
+15:30:20,942 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+15:30:20,943 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+15:30:20,945 DEBUG findProfessorById:145 : <==      Total: 1
+15:30:20,947 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+15:30:20,947 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+15:30:20,950 DEBUG findProfessorById:145 : <==      Total: 1
+15:30:22,725 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+15:30:22,726 DEBUG findAllCourse:145 : ==> Parameters: 
+15:30:22,730 DEBUG findAllCourse:145 : <==      Total: 5
+15:32:04,823 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+15:32:04,891 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+15:32:04,918 DEBUG findProfessorById:145 : <==      Total: 1
+15:32:04,922 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+15:32:04,925 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+15:32:04,940 DEBUG findProfessorById:145 : <==      Total: 1
+15:32:04,945 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+15:32:04,947 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+15:32:04,952 DEBUG findProfessorById:145 : <==      Total: 1
+15:32:06,978 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+15:32:06,980 DEBUG findAllCourse:145 : ==> Parameters: 
+15:32:06,985 DEBUG findAllCourse:145 : <==      Total: 5
+15:32:11,487 DEBUG addCourse:145 : ==>  Preparing: insert into course (courseNo,courseName,credits) values (?,?,?) 
+15:32:11,492 DEBUG addCourse:145 : ==> Parameters: 12(String), 12(String), 12.0(Double)
+15:32:11,616 DEBUG addCourse:145 : <==    Updates: 1
+15:32:11,644 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+15:32:11,647 DEBUG findAllCourse:145 : ==> Parameters: 
+15:32:11,658 DEBUG findAllCourse:145 : <==      Total: 6
+16:32:08,760 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+16:32:08,783 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+16:32:08,795 DEBUG findProfessorById:145 : <==      Total: 1
+16:32:08,797 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+16:32:08,798 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+16:32:08,800 DEBUG findProfessorById:145 : <==      Total: 1
+16:32:08,802 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+16:32:08,802 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+16:32:08,804 DEBUG findProfessorById:145 : <==      Total: 1
+16:32:10,819 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+16:32:10,821 DEBUG findAllCourse:145 : ==> Parameters: 
+16:32:10,825 DEBUG findAllCourse:145 : <==      Total: 6
+16:32:13,700 DEBUG delete:145 : ==>  Preparing: delete from course where courseNo=? 
+16:32:13,701 DEBUG delete:145 : ==> Parameters: null
+16:32:13,729 DEBUG delete:145 : <==    Updates: 0
+16:32:13,736 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+16:32:13,737 DEBUG findAllCourse:145 : ==> Parameters: 
+16:32:13,740 DEBUG findAllCourse:145 : <==      Total: 6
+16:32:17,341 DEBUG delete:145 : ==>  Preparing: delete from course where courseNo=? 
+16:32:17,342 DEBUG delete:145 : ==> Parameters: null
+16:32:17,344 DEBUG delete:145 : <==    Updates: 0
+16:32:17,352 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+16:32:17,352 DEBUG findAllCourse:145 : ==> Parameters: 
+16:32:17,357 DEBUG findAllCourse:145 : <==      Total: 6
+16:32:23,095 DEBUG delete:145 : ==>  Preparing: delete from course where courseNo=? 
+16:32:23,096 DEBUG delete:145 : ==> Parameters: null
+16:32:23,097 DEBUG delete:145 : <==    Updates: 0
+16:32:23,105 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+16:32:23,106 DEBUG findAllCourse:145 : ==> Parameters: 
+16:32:23,110 DEBUG findAllCourse:145 : <==      Total: 6
+16:46:06,890 DEBUG delete:145 : ==>  Preparing: delete from course where courseNo=? 
+16:46:06,912 DEBUG delete:145 : ==> Parameters: null
+16:46:06,915 DEBUG delete:145 : <==    Updates: 0
+16:46:06,934 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+16:46:06,936 DEBUG findAllCourse:145 : ==> Parameters: 
+16:46:06,949 DEBUG findAllCourse:145 : <==      Total: 6
+16:46:13,394 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+16:46:13,395 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+16:46:13,397 DEBUG findProfessorById:145 : <==      Total: 1
+16:46:13,398 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+16:46:13,399 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+16:46:13,400 DEBUG findProfessorById:145 : <==      Total: 1
+16:46:13,401 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+16:46:13,402 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+16:46:13,404 DEBUG findProfessorById:145 : <==      Total: 1
+16:46:16,777 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+16:46:16,778 DEBUG findAllCourse:145 : ==> Parameters: 
+16:46:16,780 DEBUG findAllCourse:145 : <==      Total: 6
+16:46:19,400 DEBUG delete:145 : ==>  Preparing: delete from course where courseNo=? 
+16:46:19,401 DEBUG delete:145 : ==> Parameters: null
+16:46:19,403 DEBUG delete:145 : <==    Updates: 0
+16:46:19,410 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+16:46:19,411 DEBUG findAllCourse:145 : ==> Parameters: 
+16:46:19,415 DEBUG findAllCourse:145 : <==      Total: 6
+16:52:38,509 DEBUG delete:145 : ==>  Preparing: delete from course where courseNo=? 
+16:52:38,511 DEBUG delete:145 : ==> Parameters: null
+16:52:38,513 DEBUG delete:145 : <==    Updates: 0
+16:52:38,531 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+16:52:38,532 DEBUG findAllCourse:145 : ==> Parameters: 
+16:52:38,537 DEBUG findAllCourse:145 : <==      Total: 6
+17:53:46,206 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+17:53:46,280 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+17:53:46,303 DEBUG findProfessorById:145 : <==      Total: 1
+17:53:46,306 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+17:53:46,306 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+17:53:46,309 DEBUG findProfessorById:145 : <==      Total: 1
+17:53:46,311 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+17:53:46,312 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+17:53:46,314 DEBUG findProfessorById:145 : <==      Total: 1
+17:53:48,965 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+17:53:48,969 DEBUG findAllCourse:145 : ==> Parameters: 
+17:53:48,982 DEBUG findAllCourse:145 : <==      Total: 6
+18:09:44,716 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+18:09:44,720 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+18:09:44,726 DEBUG findProfessorById:145 : <==      Total: 1
+18:09:44,729 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+18:09:44,731 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+18:09:44,735 DEBUG findProfessorById:145 : <==      Total: 1
+18:09:44,737 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+18:09:44,738 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+18:09:44,740 DEBUG findProfessorById:145 : <==      Total: 1
+18:09:48,348 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:09:48,349 DEBUG findAllCourse:145 : ==> Parameters: 
+18:09:48,353 DEBUG findAllCourse:145 : <==      Total: 6
+18:09:56,102 DEBUG delete:145 : ==>  Preparing: delete from course where courseNo=? 
+18:09:56,106 DEBUG delete:145 : ==> Parameters: null
+18:09:56,111 DEBUG delete:145 : <==    Updates: 0
+18:12:46,527 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+18:12:46,533 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+18:12:46,537 DEBUG findProfessorById:145 : <==      Total: 1
+18:12:46,539 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+18:12:46,540 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+18:12:46,542 DEBUG findProfessorById:145 : <==      Total: 1
+18:12:46,546 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+18:12:46,547 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+18:12:46,550 DEBUG findProfessorById:145 : <==      Total: 1
+18:12:49,023 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:12:49,025 DEBUG findAllCourse:145 : ==> Parameters: 
+18:12:49,034 DEBUG findAllCourse:145 : <==      Total: 6
+18:14:46,244 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:14:46,246 DEBUG findAllCourse:145 : ==> Parameters: 
+18:14:46,249 DEBUG findAllCourse:145 : <==      Total: 6
+18:14:46,765 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:14:46,766 DEBUG findAllCourse:145 : ==> Parameters: 
+18:14:46,769 DEBUG findAllCourse:145 : <==      Total: 6
+18:14:46,919 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:14:46,922 DEBUG findAllCourse:145 : ==> Parameters: 
+18:14:46,925 DEBUG findAllCourse:145 : <==      Total: 6
+18:14:51,043 DEBUG delete:145 : ==>  Preparing: delete from course where courseNo=? 
+18:14:51,045 DEBUG delete:145 : ==> Parameters: null
+18:14:51,047 DEBUG delete:145 : <==    Updates: 0
+18:15:20,643 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:15:20,644 DEBUG findAllCourse:145 : ==> Parameters: 
+18:15:20,649 DEBUG findAllCourse:145 : <==      Total: 6
+18:15:31,644 DEBUG delete:145 : ==>  Preparing: delete from course where courseNo=? 
+18:15:31,645 DEBUG delete:145 : ==> Parameters: null
+18:15:31,648 DEBUG delete:145 : <==    Updates: 0
+18:16:12,444 DEBUG delete:145 : ==>  Preparing: delete from course where courseNo=? 
+18:16:12,445 DEBUG delete:145 : ==> Parameters: null
+18:16:12,448 DEBUG delete:145 : <==    Updates: 0
+18:18:39,081 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:18:39,081 DEBUG findAllCourse:145 : ==> Parameters: 
+18:18:39,084 DEBUG findAllCourse:145 : <==      Total: 6
+18:21:39,038 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:21:39,072 DEBUG findAllCourse:145 : ==> Parameters: 
+18:21:39,092 DEBUG findAllCourse:145 : <==      Total: 5
+18:22:51,556 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+18:22:51,559 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+18:22:51,563 DEBUG findProfessorById:145 : <==      Total: 1
+18:22:51,567 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+18:22:51,570 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+18:22:51,574 DEBUG findProfessorById:145 : <==      Total: 1
+18:22:51,576 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+18:22:51,577 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+18:22:51,581 DEBUG findProfessorById:145 : <==      Total: 1
+18:22:56,946 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:22:56,947 DEBUG findAllCourse:145 : ==> Parameters: 
+18:22:56,950 DEBUG findAllCourse:145 : <==      Total: 5
+18:23:14,684 DEBUG addCourse:145 : ==>  Preparing: insert into course (courseNo,courseName,credits) values (?,?,?) 
+18:23:14,687 DEBUG addCourse:145 : ==> Parameters: 11(String), 11(String), 11.0(Double)
+18:23:14,788 DEBUG addCourse:145 : <==    Updates: 1
+18:23:14,808 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:23:14,810 DEBUG findAllCourse:145 : ==> Parameters: 
+18:23:14,814 DEBUG findAllCourse:145 : <==      Total: 6
+18:23:19,963 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:23:19,964 DEBUG findAllCourse:145 : ==> Parameters: 
+18:23:19,970 DEBUG findAllCourse:145 : <==      Total: 6
+18:23:23,438 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:23:23,439 DEBUG findAllCourse:145 : ==> Parameters: 
+18:23:23,441 DEBUG findAllCourse:145 : <==      Total: 6
+18:23:24,087 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:23:24,087 DEBUG findAllCourse:145 : ==> Parameters: 
+18:23:24,089 DEBUG findAllCourse:145 : <==      Total: 6
+18:23:24,255 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:23:24,256 DEBUG findAllCourse:145 : ==> Parameters: 
+18:23:24,259 DEBUG findAllCourse:145 : <==      Total: 6
+18:23:24,422 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:23:24,423 DEBUG findAllCourse:145 : ==> Parameters: 
+18:23:24,426 DEBUG findAllCourse:145 : <==      Total: 6
+18:23:24,576 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:23:24,577 DEBUG findAllCourse:145 : ==> Parameters: 
+18:23:24,579 DEBUG findAllCourse:145 : <==      Total: 6
+18:23:24,742 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:23:24,742 DEBUG findAllCourse:145 : ==> Parameters: 
+18:23:24,745 DEBUG findAllCourse:145 : <==      Total: 6
+18:23:24,919 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:23:24,920 DEBUG findAllCourse:145 : ==> Parameters: 
+18:23:24,922 DEBUG findAllCourse:145 : <==      Total: 6
+18:23:25,104 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:23:25,105 DEBUG findAllCourse:145 : ==> Parameters: 
+18:23:25,107 DEBUG findAllCourse:145 : <==      Total: 6
+18:23:49,744 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:23:49,744 DEBUG findAllCourse:145 : ==> Parameters: 
+18:23:49,747 DEBUG findAllCourse:145 : <==      Total: 6
+18:25:01,267 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:25:01,269 DEBUG findAllCourse:145 : ==> Parameters: 
+18:25:01,271 DEBUG findAllCourse:145 : <==      Total: 6
+18:25:52,297 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:25:52,298 DEBUG findAllCourse:145 : ==> Parameters: 
+18:25:52,301 DEBUG findAllCourse:145 : <==      Total: 6
+18:26:14,279 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:26:14,279 DEBUG findAllCourse:145 : ==> Parameters: 
+18:26:14,282 DEBUG findAllCourse:145 : <==      Total: 6
+18:26:20,207 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:26:20,208 DEBUG findAllCourse:145 : ==> Parameters: 
+18:26:20,211 DEBUG findAllCourse:145 : <==      Total: 6
+18:26:53,143 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:26:53,145 DEBUG findAllCourse:145 : ==> Parameters: 
+18:26:53,147 DEBUG findAllCourse:145 : <==      Total: 6
+18:27:58,816 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:27:58,817 DEBUG findAllCourse:145 : ==> Parameters: 
+18:27:58,827 DEBUG findAllCourse:145 : <==      Total: 6
+18:28:01,949 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:28:01,950 DEBUG findAllCourse:145 : ==> Parameters: 
+18:28:01,952 DEBUG findAllCourse:145 : <==      Total: 6
+18:29:02,397 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+18:29:02,427 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+18:29:02,441 DEBUG findProfessorById:145 : <==      Total: 1
+18:29:02,443 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+18:29:02,444 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+18:29:02,446 DEBUG findProfessorById:145 : <==      Total: 1
+18:29:02,448 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+18:29:02,449 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+18:29:02,451 DEBUG findProfessorById:145 : <==      Total: 1
+18:29:04,670 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:29:04,671 DEBUG findAllCourse:145 : ==> Parameters: 
+18:29:04,676 DEBUG findAllCourse:145 : <==      Total: 6
+18:29:18,188 DEBUG delete:145 : ==>  Preparing: delete from course where courseNo=? 
+18:29:18,193 DEBUG delete:145 : ==> Parameters: 11(String)
+18:29:18,286 DEBUG delete:145 : <==    Updates: 1
+18:29:18,313 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:29:18,319 DEBUG findAllCourse:145 : ==> Parameters: 
+18:29:18,321 DEBUG findAllCourse:145 : <==      Total: 5
+18:29:30,663 DEBUG addCourse:145 : ==>  Preparing: insert into course (courseNo,courseName,credits) values (?,?,?) 
+18:29:30,665 DEBUG addCourse:145 : ==> Parameters: 11(String), 11(String), 111.0(Double)
+18:29:30,767 DEBUG addCourse:145 : <==    Updates: 1
+18:29:30,782 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:29:30,783 DEBUG findAllCourse:145 : ==> Parameters: 
+18:29:30,794 DEBUG findAllCourse:145 : <==      Total: 6
+18:29:32,767 DEBUG delete:145 : ==>  Preparing: delete from course where courseNo=? 
+18:29:32,769 DEBUG delete:145 : ==> Parameters: 11(String)
+18:29:32,808 DEBUG delete:145 : <==    Updates: 1
+18:29:32,817 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+18:29:32,818 DEBUG findAllCourse:145 : ==> Parameters: 
+18:29:32,820 DEBUG findAllCourse:145 : <==      Total: 5
+20:32:47,931 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:32:47,970 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:32:47,987 DEBUG findProfessorById:145 : <==      Total: 1
+20:32:47,989 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:32:47,990 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:32:47,992 DEBUG findProfessorById:145 : <==      Total: 1
+20:32:47,993 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:32:47,994 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:32:47,996 DEBUG findProfessorById:145 : <==      Total: 1
+20:34:47,067 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:34:47,090 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:34:47,102 DEBUG findProfessorById:145 : <==      Total: 1
+20:34:47,104 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:34:47,104 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:34:47,106 DEBUG findProfessorById:145 : <==      Total: 1
+20:34:47,108 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:34:47,110 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:34:47,112 DEBUG findProfessorById:145 : <==      Total: 1
+20:35:28,543 DEBUG addCourse:145 : ==>  Preparing: insert into course (courseNo,courseName,credits) values (?,?,?) 
+20:35:28,548 DEBUG addCourse:145 : ==> Parameters: 12(String), 12(String), 12.0(Double)
+20:35:28,660 DEBUG addCourse:145 : <==    Updates: 1
+20:35:51,495 DEBUG addCourse:145 : ==>  Preparing: insert into course (courseNo,courseName,credits) values (?,?,?) 
+20:35:51,497 DEBUG addCourse:145 : ==> Parameters: 13(String), 13(String), 13.0(Double)
+20:35:51,604 DEBUG addCourse:145 : <==    Updates: 1
+20:40:01,694 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:40:01,754 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:40:01,781 DEBUG findProfessorById:145 : <==      Total: 1
+20:40:01,785 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:40:01,786 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:40:01,790 DEBUG findProfessorById:145 : <==      Total: 1
+20:40:01,792 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:40:01,792 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:40:01,794 DEBUG findProfessorById:145 : <==      Total: 1
+20:41:41,900 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:41:41,939 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:41:41,959 DEBUG findProfessorById:145 : <==      Total: 1
+20:41:41,963 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:41:41,964 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:41:41,966 DEBUG findProfessorById:145 : <==      Total: 1
+20:41:41,968 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:41:41,971 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:41:41,972 DEBUG findProfessorById:145 : <==      Total: 1
+20:41:47,989 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:41:47,991 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:41:48,227 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:41:48,237 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:41:48,240 DEBUG findAllCourse:145 : ==> Parameters: 
+20:41:48,254 DEBUG findAllCourse:145 : <==      Total: 7
+20:42:12,416 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:42:12,420 DEBUG getTotal:145 : ==> Parameters: 
+20:42:12,486 DEBUG getTotal:145 : <==      Total: 1
+20:42:36,004 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:42:36,007 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:42:36,010 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:42:36,011 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:42:36,012 DEBUG findAllCourse:145 : ==> Parameters: 
+20:42:36,015 DEBUG findAllCourse:145 : <==      Total: 7
+20:42:36,016 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:42:36,017 DEBUG getTotal:145 : ==> Parameters: 
+20:42:36,018 DEBUG getTotal:145 : <==      Total: 1
+20:42:40,891 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:42:40,893 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:42:40,896 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:42:40,897 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:42:40,897 DEBUG findAllCourse:145 : ==> Parameters: 
+20:42:40,902 DEBUG findAllCourse:145 : <==      Total: 7
+20:42:40,903 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:42:40,904 DEBUG getTotal:145 : ==> Parameters: 
+20:42:40,905 DEBUG getTotal:145 : <==      Total: 1
+20:42:58,228 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:42:58,230 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:42:58,233 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:42:58,236 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:42:58,237 DEBUG findAllCourse:145 : ==> Parameters: 
+20:42:58,239 DEBUG findAllCourse:145 : <==      Total: 7
+20:42:58,241 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:42:58,245 DEBUG getTotal:145 : ==> Parameters: 
+20:42:58,248 DEBUG getTotal:145 : <==      Total: 1
+20:43:12,993 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:43:12,999 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:43:13,003 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:43:13,006 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:43:13,008 DEBUG findAllCourse:145 : ==> Parameters: 
+20:43:13,017 DEBUG findAllCourse:145 : <==      Total: 7
+20:43:13,573 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:43:13,576 DEBUG getTotal:145 : ==> Parameters: 
+20:43:13,578 DEBUG getTotal:145 : <==      Total: 1
+20:44:07,265 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:44:07,268 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:44:07,270 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:44:07,273 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:44:07,275 DEBUG findAllCourse:145 : ==> Parameters: 
+20:44:07,281 DEBUG findAllCourse:145 : <==      Total: 7
+20:48:44,568 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:48:44,595 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:48:44,609 DEBUG findProfessorById:145 : <==      Total: 1
+20:48:44,611 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:48:44,612 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:48:44,614 DEBUG findProfessorById:145 : <==      Total: 1
+20:48:44,615 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+20:48:44,616 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+20:48:44,619 DEBUG findProfessorById:145 : <==      Total: 1
+20:49:49,952 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:49:49,954 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:49:49,958 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:49:49,960 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:49:49,960 DEBUG findAllCourse:145 : ==> Parameters: 
+20:49:49,962 DEBUG findAllCourse:145 : <==      Total: 7
+20:49:49,964 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:49:49,965 DEBUG getTotal:145 : ==> Parameters: 
+20:49:49,967 DEBUG getTotal:145 : <==      Total: 1
+20:50:56,242 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:50:56,243 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:50:56,245 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:50:56,246 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:50:56,247 DEBUG findAllCourse:145 : ==> Parameters: 
+20:50:56,250 DEBUG findAllCourse:145 : <==      Total: 7
+20:50:56,251 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:50:56,252 DEBUG getTotal:145 : ==> Parameters: 
+20:50:56,254 DEBUG getTotal:145 : <==      Total: 1
+20:50:57,550 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:50:57,551 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:50:57,552 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:50:57,553 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:50:57,554 DEBUG findAllCourse:145 : ==> Parameters: 
+20:50:57,558 DEBUG findAllCourse:145 : <==      Total: 7
+20:50:57,559 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:50:57,560 DEBUG getTotal:145 : ==> Parameters: 
+20:50:57,562 DEBUG getTotal:145 : <==      Total: 1
+20:51:00,099 DEBUG delete:145 : ==>  Preparing: delete from course where courseNo=? 
+20:51:00,100 DEBUG delete:145 : ==> Parameters: 13(String)
+20:51:00,200 DEBUG delete:145 : <==    Updates: 1
+20:51:00,216 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:51:00,218 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:51:00,221 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:51:00,222 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:51:00,223 DEBUG findAllCourse:145 : ==> Parameters: 
+20:51:00,225 DEBUG findAllCourse:145 : <==      Total: 6
+20:51:00,226 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:51:00,228 DEBUG getTotal:145 : ==> Parameters: 
+20:51:00,230 DEBUG getTotal:145 : <==      Total: 1
+20:51:04,289 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:51:04,291 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:51:04,293 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:51:04,293 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:51:04,294 DEBUG findAllCourse:145 : ==> Parameters: 
+20:51:04,296 DEBUG findAllCourse:145 : <==      Total: 6
+20:51:04,297 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:51:04,298 DEBUG getTotal:145 : ==> Parameters: 
+20:51:04,299 DEBUG getTotal:145 : <==      Total: 1
+20:51:06,096 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:51:06,097 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:51:06,098 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:51:06,099 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:51:06,100 DEBUG findAllCourse:145 : ==> Parameters: 
+20:51:06,102 DEBUG findAllCourse:145 : <==      Total: 6
+20:51:06,103 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:51:06,104 DEBUG getTotal:145 : ==> Parameters: 
+20:51:06,106 DEBUG getTotal:145 : <==      Total: 1
+20:51:07,790 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:51:07,791 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:51:07,792 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:51:07,793 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:51:07,794 DEBUG findAllCourse:145 : ==> Parameters: 
+20:51:07,796 DEBUG findAllCourse:145 : <==      Total: 6
+20:51:07,797 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:51:07,798 DEBUG getTotal:145 : ==> Parameters: 
+20:51:07,800 DEBUG getTotal:145 : <==      Total: 1
+20:51:08,937 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:51:08,938 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:51:08,939 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:51:08,940 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:51:08,940 DEBUG findAllCourse:145 : ==> Parameters: 
+20:51:08,943 DEBUG findAllCourse:145 : <==      Total: 6
+20:51:08,944 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:51:08,945 DEBUG getTotal:145 : ==> Parameters: 
+20:51:08,946 DEBUG getTotal:145 : <==      Total: 1
+20:51:09,975 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:51:09,976 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:51:09,978 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:51:09,978 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:51:09,979 DEBUG findAllCourse:145 : ==> Parameters: 
+20:51:09,981 DEBUG findAllCourse:145 : <==      Total: 6
+20:51:09,983 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:51:09,983 DEBUG getTotal:145 : ==> Parameters: 
+20:51:09,985 DEBUG getTotal:145 : <==      Total: 1
+20:51:12,855 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:51:12,856 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:51:12,857 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:51:12,858 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:51:12,859 DEBUG findAllCourse:145 : ==> Parameters: 
+20:51:12,861 DEBUG findAllCourse:145 : <==      Total: 6
+20:51:12,862 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:51:12,863 DEBUG getTotal:145 : ==> Parameters: 
+20:51:12,864 DEBUG getTotal:145 : <==      Total: 1
+20:51:14,095 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:51:14,096 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:51:14,099 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:51:14,100 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:51:14,100 DEBUG findAllCourse:145 : ==> Parameters: 
+20:51:14,103 DEBUG findAllCourse:145 : <==      Total: 6
+20:51:14,104 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:51:14,105 DEBUG getTotal:145 : ==> Parameters: 
+20:51:14,107 DEBUG getTotal:145 : <==      Total: 1
+20:51:14,896 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:51:14,897 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:51:14,899 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:51:14,899 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:51:14,900 DEBUG findAllCourse:145 : ==> Parameters: 
+20:51:14,903 DEBUG findAllCourse:145 : <==      Total: 6
+20:51:14,904 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:51:14,904 DEBUG getTotal:145 : ==> Parameters: 
+20:51:14,905 DEBUG getTotal:145 : <==      Total: 1
+20:51:15,686 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:51:15,687 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:51:15,689 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:51:15,689 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:51:15,690 DEBUG findAllCourse:145 : ==> Parameters: 
+20:51:15,692 DEBUG findAllCourse:145 : <==      Total: 6
+20:51:15,694 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:51:15,696 DEBUG getTotal:145 : ==> Parameters: 
+20:51:15,699 DEBUG getTotal:145 : <==      Total: 1
+20:51:16,264 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:51:16,266 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:51:16,267 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:51:16,268 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:51:16,269 DEBUG findAllCourse:145 : ==> Parameters: 
+20:51:16,272 DEBUG findAllCourse:145 : <==      Total: 6
+20:51:16,273 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:51:16,273 DEBUG getTotal:145 : ==> Parameters: 
+20:51:16,276 DEBUG getTotal:145 : <==      Total: 1
+20:51:16,775 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:51:16,775 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:51:16,777 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:51:16,778 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:51:16,778 DEBUG findAllCourse:145 : ==> Parameters: 
+20:51:16,780 DEBUG findAllCourse:145 : <==      Total: 6
+20:51:16,782 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:51:16,782 DEBUG getTotal:145 : ==> Parameters: 
+20:51:16,783 DEBUG getTotal:145 : <==      Total: 1
+20:51:17,241 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:51:17,242 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:51:17,244 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:51:17,244 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:51:17,245 DEBUG findAllCourse:145 : ==> Parameters: 
+20:51:17,247 DEBUG findAllCourse:145 : <==      Total: 6
+20:51:17,248 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:51:17,248 DEBUG getTotal:145 : ==> Parameters: 
+20:51:17,250 DEBUG getTotal:145 : <==      Total: 1
+20:51:17,663 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:51:17,663 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:51:17,664 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:51:17,665 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:51:17,666 DEBUG findAllCourse:145 : ==> Parameters: 
+20:51:17,668 DEBUG findAllCourse:145 : <==      Total: 6
+20:51:17,669 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:51:17,669 DEBUG getTotal:145 : ==> Parameters: 
+20:51:17,670 DEBUG getTotal:145 : <==      Total: 1
+20:51:18,000 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:51:18,001 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:51:18,002 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:51:18,003 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:51:18,004 DEBUG findAllCourse:145 : ==> Parameters: 
+20:51:18,006 DEBUG findAllCourse:145 : <==      Total: 6
+20:51:18,007 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:51:18,010 DEBUG getTotal:145 : ==> Parameters: 
+20:51:18,012 DEBUG getTotal:145 : <==      Total: 1
+20:51:19,054 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:51:19,055 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:51:19,056 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:51:19,057 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:51:19,057 DEBUG findAllCourse:145 : ==> Parameters: 
+20:51:19,059 DEBUG findAllCourse:145 : <==      Total: 6
+20:51:19,060 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:51:19,060 DEBUG getTotal:145 : ==> Parameters: 
+20:51:19,061 DEBUG getTotal:145 : <==      Total: 1
+20:55:31,898 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:55:31,899 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:55:31,901 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:55:31,901 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:55:31,902 DEBUG findAllCourse:145 : ==> Parameters: 
+20:55:31,904 DEBUG findAllCourse:145 : <==      Total: 6
+20:55:31,905 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:55:31,906 DEBUG getTotal:145 : ==> Parameters: 
+20:55:31,908 DEBUG getTotal:145 : <==      Total: 1
+20:55:32,251 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:55:32,252 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:55:32,253 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:55:32,254 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:55:32,255 DEBUG findAllCourse:145 : ==> Parameters: 
+20:55:32,257 DEBUG findAllCourse:145 : <==      Total: 6
+20:55:32,259 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:55:32,260 DEBUG getTotal:145 : ==> Parameters: 
+20:55:32,261 DEBUG getTotal:145 : <==      Total: 1
+20:55:33,664 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:55:33,664 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:55:33,666 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:55:33,666 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:55:33,667 DEBUG findAllCourse:145 : ==> Parameters: 
+20:55:33,669 DEBUG findAllCourse:145 : <==      Total: 6
+20:55:33,670 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:55:33,671 DEBUG getTotal:145 : ==> Parameters: 
+20:55:33,672 DEBUG getTotal:145 : <==      Total: 1
+20:55:34,435 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:55:34,436 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:55:34,437 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:55:34,438 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:55:34,438 DEBUG findAllCourse:145 : ==> Parameters: 
+20:55:34,440 DEBUG findAllCourse:145 : <==      Total: 6
+20:55:34,442 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:55:34,442 DEBUG getTotal:145 : ==> Parameters: 
+20:55:34,444 DEBUG getTotal:145 : <==      Total: 1
+20:55:37,755 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:55:37,756 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:55:37,758 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:55:37,759 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:55:37,760 DEBUG findAllCourse:145 : ==> Parameters: 
+20:55:37,761 DEBUG findAllCourse:145 : <==      Total: 6
+20:55:37,762 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:55:37,763 DEBUG getTotal:145 : ==> Parameters: 
+20:55:37,764 DEBUG getTotal:145 : <==      Total: 1
+20:55:39,856 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:55:39,857 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:55:39,858 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:55:39,859 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:55:39,859 DEBUG findAllCourse:145 : ==> Parameters: 
+20:55:39,861 DEBUG findAllCourse:145 : <==      Total: 6
+20:55:39,862 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:55:39,863 DEBUG getTotal:145 : ==> Parameters: 
+20:55:39,864 DEBUG getTotal:145 : <==      Total: 1
+20:55:41,286 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:55:41,287 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:55:41,288 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:55:41,289 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:55:41,290 DEBUG findAllCourse:145 : ==> Parameters: 
+20:55:41,292 DEBUG findAllCourse:145 : <==      Total: 6
+20:55:41,293 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:55:41,293 DEBUG getTotal:145 : ==> Parameters: 
+20:55:41,294 DEBUG getTotal:145 : <==      Total: 1
+20:56:17,442 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:56:17,443 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:56:17,445 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:56:17,446 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:56:17,446 DEBUG findAllCourse:145 : ==> Parameters: 
+20:56:17,448 DEBUG findAllCourse:145 : <==      Total: 6
+20:56:17,449 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:56:17,450 DEBUG getTotal:145 : ==> Parameters: 
+20:56:17,451 DEBUG getTotal:145 : <==      Total: 1
+20:56:18,191 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:56:18,192 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:56:18,193 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:56:18,194 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:56:18,195 DEBUG findAllCourse:145 : ==> Parameters: 
+20:56:18,196 DEBUG findAllCourse:145 : <==      Total: 6
+20:56:18,197 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:56:18,198 DEBUG getTotal:145 : ==> Parameters: 
+20:56:18,199 DEBUG getTotal:145 : <==      Total: 1
+20:56:18,574 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:56:18,575 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:56:18,575 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:56:18,576 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:56:18,577 DEBUG findAllCourse:145 : ==> Parameters: 
+20:56:18,578 DEBUG findAllCourse:145 : <==      Total: 6
+20:56:18,579 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:56:18,580 DEBUG getTotal:145 : ==> Parameters: 
+20:56:18,581 DEBUG getTotal:145 : <==      Total: 1
+20:59:07,028 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:59:07,028 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:59:07,030 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:59:07,031 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:59:07,031 DEBUG findAllCourse:145 : ==> Parameters: 
+20:59:07,033 DEBUG findAllCourse:145 : <==      Total: 6
+20:59:07,034 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:59:07,035 DEBUG getTotal:145 : ==> Parameters: 
+20:59:07,036 DEBUG getTotal:145 : <==      Total: 1
+20:59:07,686 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:59:07,687 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:59:07,689 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:59:07,690 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:59:07,690 DEBUG findAllCourse:145 : ==> Parameters: 
+20:59:07,692 DEBUG findAllCourse:145 : <==      Total: 6
+20:59:07,693 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:59:07,694 DEBUG getTotal:145 : ==> Parameters: 
+20:59:07,695 DEBUG getTotal:145 : <==      Total: 1
+20:59:08,252 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:59:08,253 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:59:08,254 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:59:08,255 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:59:08,256 DEBUG findAllCourse:145 : ==> Parameters: 
+20:59:08,258 DEBUG findAllCourse:145 : <==      Total: 6
+20:59:08,259 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:59:08,260 DEBUG getTotal:145 : ==> Parameters: 
+20:59:08,261 DEBUG getTotal:145 : <==      Total: 1
+20:59:08,413 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:59:08,413 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:59:08,414 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:59:08,415 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:59:08,415 DEBUG findAllCourse:145 : ==> Parameters: 
+20:59:08,416 DEBUG findAllCourse:145 : <==      Total: 6
+20:59:08,417 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:59:08,418 DEBUG getTotal:145 : ==> Parameters: 
+20:59:08,418 DEBUG getTotal:145 : <==      Total: 1
+20:59:08,626 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:59:08,627 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:59:08,628 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:59:08,629 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:59:08,629 DEBUG findAllCourse:145 : ==> Parameters: 
+20:59:08,631 DEBUG findAllCourse:145 : <==      Total: 6
+20:59:08,632 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:59:08,632 DEBUG getTotal:145 : ==> Parameters: 
+20:59:08,633 DEBUG getTotal:145 : <==      Total: 1
+20:59:08,810 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:59:08,810 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:59:08,811 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:59:08,812 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:59:08,812 DEBUG findAllCourse:145 : ==> Parameters: 
+20:59:08,813 DEBUG findAllCourse:145 : <==      Total: 6
+20:59:08,814 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:59:08,815 DEBUG getTotal:145 : ==> Parameters: 
+20:59:08,816 DEBUG getTotal:145 : <==      Total: 1
+20:59:09,002 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:59:09,003 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:59:09,004 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:59:09,005 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:59:09,005 DEBUG findAllCourse:145 : ==> Parameters: 
+20:59:09,007 DEBUG findAllCourse:145 : <==      Total: 6
+20:59:09,008 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:59:09,009 DEBUG getTotal:145 : ==> Parameters: 
+20:59:09,010 DEBUG getTotal:145 : <==      Total: 1
+20:59:09,189 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:59:09,190 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:59:09,192 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:59:09,193 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:59:09,193 DEBUG findAllCourse:145 : ==> Parameters: 
+20:59:09,194 DEBUG findAllCourse:145 : <==      Total: 6
+20:59:09,196 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:59:09,196 DEBUG getTotal:145 : ==> Parameters: 
+20:59:09,197 DEBUG getTotal:145 : <==      Total: 1
+20:59:09,466 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:59:09,467 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:59:09,468 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:59:09,468 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:59:09,469 DEBUG findAllCourse:145 : ==> Parameters: 
+20:59:09,471 DEBUG findAllCourse:145 : <==      Total: 6
+20:59:09,472 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:59:09,473 DEBUG getTotal:145 : ==> Parameters: 
+20:59:09,474 DEBUG getTotal:145 : <==      Total: 1
+20:59:09,801 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:59:09,802 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:59:09,804 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:59:09,804 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:59:09,805 DEBUG findAllCourse:145 : ==> Parameters: 
+20:59:09,807 DEBUG findAllCourse:145 : <==      Total: 6
+20:59:09,808 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:59:09,808 DEBUG getTotal:145 : ==> Parameters: 
+20:59:09,809 DEBUG getTotal:145 : <==      Total: 1
+20:59:10,155 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:59:10,156 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:59:10,158 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:59:10,159 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:59:10,159 DEBUG findAllCourse:145 : ==> Parameters: 
+20:59:10,161 DEBUG findAllCourse:145 : <==      Total: 6
+20:59:10,161 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:59:10,162 DEBUG getTotal:145 : ==> Parameters: 
+20:59:10,163 DEBUG getTotal:145 : <==      Total: 1
+20:59:10,570 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:59:10,571 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:59:10,572 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:59:10,573 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:59:10,574 DEBUG findAllCourse:145 : ==> Parameters: 
+20:59:10,576 DEBUG findAllCourse:145 : <==      Total: 6
+20:59:10,577 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:59:10,577 DEBUG getTotal:145 : ==> Parameters: 
+20:59:10,578 DEBUG getTotal:145 : <==      Total: 1
+20:59:10,984 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:59:10,985 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:59:10,986 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:59:10,987 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:59:10,987 DEBUG findAllCourse:145 : ==> Parameters: 
+20:59:10,989 DEBUG findAllCourse:145 : <==      Total: 6
+20:59:10,991 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:59:10,991 DEBUG getTotal:145 : ==> Parameters: 
+20:59:10,992 DEBUG getTotal:145 : <==      Total: 1
+20:59:11,329 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:59:11,330 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:59:11,331 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:59:11,332 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:59:11,332 DEBUG findAllCourse:145 : ==> Parameters: 
+20:59:11,333 DEBUG findAllCourse:145 : <==      Total: 6
+20:59:11,334 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:59:11,335 DEBUG getTotal:145 : ==> Parameters: 
+20:59:11,336 DEBUG getTotal:145 : <==      Total: 1
+20:59:11,701 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:59:11,702 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:59:11,703 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:59:11,704 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:59:11,705 DEBUG findAllCourse:145 : ==> Parameters: 
+20:59:11,706 DEBUG findAllCourse:145 : <==      Total: 6
+20:59:11,707 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:59:11,708 DEBUG getTotal:145 : ==> Parameters: 
+20:59:11,709 DEBUG getTotal:145 : <==      Total: 1
+20:59:12,048 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:59:12,048 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:59:12,050 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:59:12,050 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:59:12,051 DEBUG findAllCourse:145 : ==> Parameters: 
+20:59:12,051 DEBUG findAllCourse:145 : <==      Total: 6
+20:59:12,053 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:59:12,053 DEBUG getTotal:145 : ==> Parameters: 
+20:59:12,054 DEBUG getTotal:145 : <==      Total: 1
+20:59:13,145 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:59:13,146 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:59:13,148 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:59:13,148 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:59:13,149 DEBUG findAllCourse:145 : ==> Parameters: 
+20:59:13,151 DEBUG findAllCourse:145 : <==      Total: 6
+20:59:13,152 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:59:13,153 DEBUG getTotal:145 : ==> Parameters: 
+20:59:13,154 DEBUG getTotal:145 : <==      Total: 1
+20:59:14,649 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:59:14,650 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:59:14,651 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:59:14,652 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:59:14,652 DEBUG findAllCourse:145 : ==> Parameters: 
+20:59:14,654 DEBUG findAllCourse:145 : <==      Total: 6
+20:59:14,655 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:59:14,656 DEBUG getTotal:145 : ==> Parameters: 
+20:59:14,658 DEBUG getTotal:145 : <==      Total: 1
+20:59:15,152 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:59:15,152 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:59:15,153 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:59:15,154 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:59:15,155 DEBUG findAllCourse:145 : ==> Parameters: 
+20:59:15,157 DEBUG findAllCourse:145 : <==      Total: 6
+20:59:15,158 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:59:15,158 DEBUG getTotal:145 : ==> Parameters: 
+20:59:15,159 DEBUG getTotal:145 : <==      Total: 1
+20:59:25,831 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:59:25,832 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:59:25,833 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:59:25,834 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:59:25,835 DEBUG findAllCourse:145 : ==> Parameters: 
+20:59:25,836 DEBUG findAllCourse:145 : <==      Total: 6
+20:59:25,837 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:59:25,838 DEBUG getTotal:145 : ==> Parameters: 
+20:59:25,839 DEBUG getTotal:145 : <==      Total: 1
+20:59:32,847 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:59:32,848 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:59:32,849 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:59:32,850 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:59:32,851 DEBUG findAllCourse:145 : ==> Parameters: 
+20:59:32,852 DEBUG findAllCourse:145 : <==      Total: 6
+20:59:32,853 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:59:32,854 DEBUG getTotal:145 : ==> Parameters: 
+20:59:32,855 DEBUG getTotal:145 : <==      Total: 1
+20:59:34,240 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+20:59:34,241 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+20:59:34,243 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+20:59:34,243 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+20:59:34,244 DEBUG findAllCourse:145 : ==> Parameters: 
+20:59:34,245 DEBUG findAllCourse:145 : <==      Total: 6
+20:59:34,247 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+20:59:34,247 DEBUG getTotal:145 : ==> Parameters: 
+20:59:34,248 DEBUG getTotal:145 : <==      Total: 1
+21:00:22,157 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+21:00:22,160 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+21:00:22,163 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+21:00:22,165 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+21:00:22,166 DEBUG findAllCourse:145 : ==> Parameters: 
+21:00:22,171 DEBUG findAllCourse:145 : <==      Total: 6
+21:00:22,173 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+21:00:22,175 DEBUG getTotal:145 : ==> Parameters: 
+21:00:22,177 DEBUG getTotal:145 : <==      Total: 1
+21:13:15,888 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+21:13:15,891 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+21:13:15,898 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+21:13:15,899 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+21:13:15,899 DEBUG findAllCourse:145 : ==> Parameters: 
+21:13:15,901 DEBUG findAllCourse:145 : <==      Total: 6
+21:13:15,903 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+21:13:15,905 DEBUG getTotal:145 : ==> Parameters: 
+21:13:15,907 DEBUG getTotal:145 : <==      Total: 1
+21:13:17,082 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+21:13:17,083 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+21:13:17,084 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+21:13:17,085 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+21:13:17,086 DEBUG findAllCourse:145 : ==> Parameters: 
+21:13:17,087 DEBUG findAllCourse:145 : <==      Total: 6
+21:13:17,088 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+21:13:17,089 DEBUG getTotal:145 : ==> Parameters: 
+21:13:17,090 DEBUG getTotal:145 : <==      Total: 1
+21:13:17,794 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+21:13:17,795 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+21:13:17,798 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+21:13:17,798 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+21:13:17,799 DEBUG findAllCourse:145 : ==> Parameters: 
+21:13:17,801 DEBUG findAllCourse:145 : <==      Total: 6
+21:13:17,802 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+21:13:17,803 DEBUG getTotal:145 : ==> Parameters: 
+21:13:17,804 DEBUG getTotal:145 : <==      Total: 1
+21:13:27,688 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+21:13:27,689 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+21:13:27,690 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+21:13:27,691 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+21:13:27,693 DEBUG findAllCourse:145 : ==> Parameters: 
+21:13:27,697 DEBUG findAllCourse:145 : <==      Total: 6
+21:13:27,699 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+21:13:27,700 DEBUG getTotal:145 : ==> Parameters: 
+21:13:27,701 DEBUG getTotal:145 : <==      Total: 1
+21:23:06,890 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+21:23:06,892 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+21:23:06,896 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+21:23:06,897 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+21:23:06,898 DEBUG findAllCourse:145 : ==> Parameters: 
+21:23:06,899 DEBUG findAllCourse:145 : <==      Total: 6
+21:23:06,900 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+21:23:06,901 DEBUG getTotal:145 : ==> Parameters: 
+21:23:06,902 DEBUG getTotal:145 : <==      Total: 1
+21:31:40,510 DEBUG addCourse:145 : ==>  Preparing: insert into course (courseNo,courseName,credits) values (?,?,?) 
+21:31:40,512 DEBUG addCourse:145 : ==> Parameters: MNJ588(String), ÍøÂçÓªÏú(String), 5.0(Double)
+21:31:40,634 DEBUG addCourse:145 : <==    Updates: 1
+21:31:40,646 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+21:31:40,647 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+21:31:40,649 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+21:31:40,652 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+21:31:40,653 DEBUG findAllCourse:145 : ==> Parameters: 
+21:31:40,655 DEBUG findAllCourse:145 : <==      Total: 7
+21:31:40,656 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+21:31:40,657 DEBUG getTotal:145 : ==> Parameters: 
+21:31:40,704 DEBUG getTotal:145 : <==      Total: 1
+21:31:43,019 DEBUG delete:145 : ==>  Preparing: delete from course where courseNo=? 
+21:31:43,020 DEBUG delete:145 : ==> Parameters: 12(String)
+21:31:43,076 DEBUG delete:145 : <==    Updates: 1
+21:31:43,083 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+21:31:43,084 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+21:31:43,086 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+21:31:43,087 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+21:31:43,088 DEBUG findAllCourse:145 : ==> Parameters: 
+21:31:43,092 DEBUG findAllCourse:145 : <==      Total: 6
+21:31:43,093 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+21:31:43,093 DEBUG getTotal:145 : ==> Parameters: 
+21:31:43,094 DEBUG getTotal:145 : <==      Total: 1
+21:31:54,954 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+21:31:54,956 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+21:31:54,958 DEBUG findProfessorById:145 : <==      Total: 1
+21:31:54,959 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+21:31:54,960 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+21:31:54,961 DEBUG findProfessorById:145 : <==      Total: 1
+21:31:54,963 DEBUG findProfessorById:145 : ==>  Preparing: select * from professor where id=? 
+21:31:54,964 DEBUG findProfessorById:145 : ==> Parameters: 09143600(String)
+21:31:54,965 DEBUG findProfessorById:145 : <==      Total: 1
+21:31:56,839 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+21:31:56,841 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+21:31:56,842 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+21:31:56,842 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+21:31:56,843 DEBUG findAllCourse:145 : ==> Parameters: 
+21:31:56,845 DEBUG findAllCourse:145 : <==      Total: 6
+21:31:56,846 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+21:31:56,847 DEBUG getTotal:145 : ==> Parameters: 
+21:31:56,848 DEBUG getTotal:145 : <==      Total: 1
+21:32:39,891 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+21:32:39,892 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+21:32:39,894 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+21:32:39,895 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+21:32:39,896 DEBUG findAllCourse:145 : ==> Parameters: 
+21:32:39,898 DEBUG findAllCourse:145 : <==      Total: 6
+21:32:39,899 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+21:32:39,900 DEBUG getTotal:145 : ==> Parameters: 
+21:32:39,901 DEBUG getTotal:145 : <==      Total: 1
+21:32:40,837 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+21:32:40,838 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+21:32:40,839 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+21:32:40,840 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+21:32:40,841 DEBUG findAllCourse:145 : ==> Parameters: 
+21:32:40,842 DEBUG findAllCourse:145 : <==      Total: 6
+21:32:40,843 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+21:32:40,844 DEBUG getTotal:145 : ==> Parameters: 
+21:32:40,845 DEBUG getTotal:145 : <==      Total: 1
+21:32:41,389 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+21:32:41,390 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+21:32:41,392 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+21:32:41,392 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+21:32:41,393 DEBUG findAllCourse:145 : ==> Parameters: 
+21:32:41,394 DEBUG findAllCourse:145 : <==      Total: 6
+21:32:41,395 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+21:32:41,396 DEBUG getTotal:145 : ==> Parameters: 
+21:32:41,398 DEBUG getTotal:145 : <==      Total: 1
+21:32:41,603 DEBUG findAllCourse_COUNT:145 : ==>  Preparing: SELECT count(0) FROM course 
+21:32:41,604 DEBUG findAllCourse_COUNT:145 : ==> Parameters: 
+21:32:41,605 DEBUG findAllCourse_COUNT:145 : <==      Total: 1
+21:32:41,606 DEBUG findAllCourse:145 : ==>  Preparing: select * from course 
+21:32:41,607 DEBUG findAllCourse:145 : ==> Parameters: 
+21:32:41,609 DEBUG findAllCourse:145 : <==      Total: 6
+21:32:41,611 DEBUG getTotal:145 : ==>  Preparing: select count(*) from course 
+21:32:41,611 DEBUG getTotal:145 : ==> Parameters: 
+21:32:41,614 DEBUG getTotal:145 : <==      Total: 1

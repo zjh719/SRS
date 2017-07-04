@@ -1,0 +1,42 @@
+18:26:53,824 DEBUG checkLogin:145 : ==>  Preparing: select * from students where students_id=? and password=? 
+18:26:53,868 DEBUG checkLogin:145 : ==> Parameters: 2016100018(String), 12345678(Integer)
+18:26:53,966 DEBUG checkLogin:145 : <==      Total: 0
+18:27:07,655 DEBUG checkLogin:145 : ==>  Preparing: select * from students where students_id=? and password=? 
+18:27:07,657 DEBUG checkLogin:145 : ==> Parameters: 09143627(String), 12345678(Integer)
+18:27:07,663 DEBUG checkLogin:145 : <==      Total: 0
+18:27:11,583 DEBUG checkLogin:145 : ==>  Preparing: select * from students where students_id=? and password=? 
+18:27:11,587 DEBUG checkLogin:145 : ==> Parameters: 09143627(String), 123456(Integer)
+18:27:11,599 DEBUG checkLogin:145 : <==      Total: 1
+18:27:11,604 DEBUG queryById:145 : ==>  Preparing: select * from students where students_id=? 
+18:27:11,605 DEBUG queryById:145 : ==> Parameters: 09143627(String)
+18:27:11,613 DEBUG queryById:145 : <==      Total: 1
+18:27:11,632 DEBUG queryById:145 : ==>  Preparing: select * from students where students_id=? 
+18:27:11,635 DEBUG queryById:145 : ==> Parameters: 09143627(String)
+18:27:11,639 DEBUG queryById:145 : <==      Total: 1
+18:27:13,197 DEBUG queryAll_COUNT:145 : ==>  Preparing: SELECT count(0) FROM students 
+18:27:13,199 DEBUG queryAll_COUNT:145 : ==> Parameters: 
+18:27:13,212 DEBUG queryAll_COUNT:145 : <==      Total: 1
+18:27:13,214 DEBUG queryAll:145 : ==>  Preparing: select * from students LIMIT 10 
+18:27:13,214 DEBUG queryAll:145 : ==> Parameters: 
+18:27:13,231 DEBUG queryAll:145 : <==      Total: 10
+18:27:13,233 DEBUG count:145 : ==>  Preparing: select count(*) from students 
+18:27:13,234 DEBUG count:145 : ==> Parameters: 
+18:27:13,236 DEBUG count:145 : <==      Total: 1
+18:27:13,556 DEBUG queryAll_COUNT:145 : ==>  Preparing: SELECT count(0) FROM students 
+18:27:13,557 DEBUG queryAll_COUNT:145 : ==> Parameters: 
+18:27:13,559 DEBUG queryAll_COUNT:145 : <==      Total: 1
+18:27:13,560 DEBUG queryAll:145 : ==>  Preparing: select * from students LIMIT 10 
+18:27:13,561 DEBUG queryAll:145 : ==> Parameters: 
+18:27:13,572 DEBUG queryAll:145 : <==      Total: 10
+18:27:13,574 DEBUG count:145 : ==>  Preparing: select count(*) from students 
+18:27:13,574 DEBUG count:145 : ==> Parameters: 
+18:27:13,576 DEBUG count:145 : <==      Total: 1
+18:27:14,944 DEBUG count:145 : ==>  Preparing: select count(*) from students 
+18:27:14,945 DEBUG count:145 : ==> Parameters: 
+18:27:14,947 DEBUG count:145 : <==      Total: 1
+18:27:14,948 DEBUG queryAll_COUNT:145 : ==>  Preparing: SELECT count(0) FROM students 
+18:27:14,949 DEBUG queryAll_COUNT:145 : ==> Parameters: 
+18:27:14,951 DEBUG queryAll_COUNT:145 : <==      Total: 1
+18:27:14,952 DEBUG queryAll:145 : ==>  Preparing: select * from students LIMIT 5 
+18:27:14,953 DEBUG queryAll:145 : ==> Parameters: 
+18:27:14,955 DEBUG queryAll:145 : <==      Total: 5

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.github.zjh.dao.CourseDao">
+    <!-- 返回类型 -->
+    <resultMap id="course" type="com.github.zjh.domain.Course">
+    	<result property="courseNo" column="courseNo"/>
+    	<result property="courseName" column="courseName"/>  
+    	<result property="credits" column="credits"/>  
+    </resultMap>
+    
+   <!-- 查询 数据-->
+   <select id="findAllCourse" resultMap="course" databaseId="mysql">
+       select * from course
+   </select>
+    <!--添加课程  -->
+   <insert id="addCourse"  databaseId="mysql" useGeneratedKeys="true" keyProperty="id">
+       insert into course(courseNo,courseName,credits) values (#{courseNo},#{courseName},#{credits})
+   </insert>
+    <!--删除课程  -->
+   <delete id="delete" parameterType="String" databaseId="mysql">
+       delete from course where courseNo=#{courseNo}
+   </delete>
+    <!--计数课程  -->
+   <select  id="getTotal" resultType="java.lang.Integer" databaseId="mysql">
+          select count(*) from course
+   
+   </select>
+    <!--模糊查询  -->
+    <select id="fuzzyFindCourse" resultMap="course" databaseId="mysql"> 
+		select * from course where 
+		credits like #{search} or courseNo like #{search} or courseName like #{search}
+    </select>
+     <!--更新课程信息  -->
+     <update id="resetCourse" databaseId="mysql">
+     update course set courseName=#{courseName},credits=#{credits} where courseNo=#{courseNo} 
+     </update>
+     
+     
+     <!-- 找到前置课程 -->
+     <select id="findPreCourse" resultMap="course">
+     select * from course  as c inner join 
+    (select * from preCourse where courseNo=#{courseNo}) as p on c.courseNo=p.courseNo    
+     </select>
+</mapper>
